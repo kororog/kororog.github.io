@@ -1,0 +1,16 @@
+*{margin:0;padding:0;}
+html{ font-size:62.5% }
+body{ font-family:sans-serif;font-size:1.6em;background-color:#E3F3FF;text-align:center;margin:1em;line-height:100%;color:#333; }
+a:link,a:visited { color:#2147FF;text-decoration:underline; }
+a:hover{ color:#8af;text-decoration:none; }
+
+#tbox{text-align:left;margin:0 auto;}
+.ct{background-color:white;padding:16px 20px;border:solid 1px #666;box-shadow:4px 4px rgb(0 0 0 / 60%);margin-bottom:2em;line-height:180%;}
+
+ul,ol{margin-left:1.5em;}
+li{line-height:200%;}
+em{font-style:normal;color:red;}
+
+@media screen and (min-width:900px){
+#tbox{width:800px;}
+}

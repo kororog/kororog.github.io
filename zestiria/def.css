@@ -1,0 +1,73 @@
+*{margin:0;padding:0;}
+html{ font-size:62.5% }
+body{ font-family:sans-serif;font-size:1.5em;background:url(back.png) #a1e0f6;text-align:center;margin:1em;line-height:100%;color:#333; }
+a:link,a:visited { color:#2147FF;text-decoration:underline; }
+a:hover{ color:#8af;text-decoration:none; }
+
+#tbox{text-align:left;margin:0 auto;}
+h1{font-size:140%;font-weight:normal;color:white;background-color:#5DAE00;padding:8px;margin:2em 0;text-align:center;border-radius:8px;}
+.ct{background-color:white;padding:16px 20px;border:solid 1px #666;box-shadow:4px 4px rgb(0 0 0 / 60%);margin-bottom:2em;line-height:180%;}
+h2{font-size:130%;margin:2em 0 1.5em 0;color:#FF7031;border-bottom:solid 2px #ff7031;padding:4px 0 4px 6px;line-height:100%;}
+h2:first-child{margin-top:0}
+.navi{font-size:140%;font-weight:bold;background-color:white;padding:8px 12px;text-align:center;}
+.link{margin-bottom:2em;padding:0.5em;background-color:rgba(255,255,255,0.5);line-height:140%;}
+h4{font-size:110%;padding:0 0 3px 4px;border-bottom:solid 1px #333;line-height:100%;margin-bottom:1em;}
+h5{font-size:120%;line-height:100%;margin:1.8em 0 1.5em 0;} h5::before{content:"■ "}
+
+ul,ol{margin-left:1.5em;}
+li{line-height:200%;}
+em{font-style:normal;color:red;}
+
+table{border-collapse:collapse;}
+td,th{padding:3px 4px;line-height:160%;}
+table.tbl1 td,table.tbl1 th{border:solid 1px black;}
+table.tbl1 th{background-color:#d0d0d0;text-align:left;}
+.tblh{background-color:#777;color:white;font-weight:bold;padding:4px 6px;line-height:120%;text-align:center;}
+table.masu td{padding:3px;line-height:100%;text-align:center;}
+
+h3{font-size:120%;margin:2em 0 1.5em 0;color:#7E48C7;background-color:#EADBFF;border:double #7E48C7;border-width:3px 0;padding:6px 8px;line-height:100%;}
+h3:first-child{margin-top:0}
+.ssub, .sem, .schat, .lchat, .stn, .dis, .noru, .doseki, .hyoma{padding:4px 8px;margin:1em 0;border:solid 1px;line-height:180%;}
+.schat::before, .lchat::before, .stn::before, .dis::before, .noru::before, .doseki::before, .hyoma::before {
+ color:white;padding:2px 5px;position:relative;top:-5px;left:-8px;}
+
+.st{color:#003BB0;font-weight:bold;margin:0.6em 0;border-left:solid 4px #003BB0;padding-left:6px;}
+.ssub{border-color:#666}
+.sem{color:#CC0000;border:solid 2px #CC0000;background-color:#FFF2F2;border-radius:8px;}
+.btt{color:#F05800;font-weight:bold;font-size:110%;margin:1em 0;} .btt::before{content:"<戦闘> "}
+.schat{color:#D4206B;border-color:#D4206B;} .schat::before{content:"Sチャット";background-color:#D4206B;}
+.lchat{color:#194D00;border-color:#194D00;} .lchat::before{content:"チャット";background-color:#297D00;}
+.stn{color:#8D3E17;border-color:#8D3E17;} .stn::before{content:"石碑";background-color:#8D3E17;}
+.dis{color:#581232;border-color:#581232;} .dis::before{content:"ディスカバリー";background-color:#7D3254;}
+.dis .lchat{margin:0.8em 0 0.2em 0}
+.noru{color:#0B658C;border-color:#0B658C;} .noru::before{content:"ノルミン";background-color:#0B658C;}
+.doseki{color:#7D299E;border-color:#9631BD;} .doseki::before{content:"瞳石イベント";background-color:#9631BD;}
+.hyoma{color:#B84100;border-color:#CC4800;} .hyoma::before{content:"変異憑魔";background-color:#CC4800;}
+
+.tblc{border-collapse:separate;border-spacing:1px;}
+table.tblc td,table.tblc th{padding:1px 4px;}
+table.tblc th{font-size:85%;color:white;font-weight:normal;text-align:center;white-space:nowrap;}
+.tsc{background-color:#877;color:white;font-weight:bold;padding:3px 6px !important;line-height:100%;text-align:center;} .tsc::after{content:"遭遇チャット"}
+.tka{background-color:#778;color:white;font-weight:bold;padding:3px 6px !important;line-height:100%;text-align:center;} .tka::after{content:"解説"}
+.sla{background-color:#BA7316} .sla::after{content:"スレイ"}
+.mic{background-color:#1A9DE9} .mic::after{content:"ミクリオ"}
+.ari{background-color:#E761E4} .ari::after{content:"アリーシャ"}
+.lai{background-color:#DB5858} .lai::after{content:"ライラ"}
+.edo{background-color:#C9C000} .edo::after{content:"エドナ"}
+.dez{background-color:#2CA523} .dez::after{content:"デゼル"}
+.ros{background-color:#A861D2} .ros::after{content:"ロゼ"}
+.zab{background-color:#22801B} .zab::after{content:"ザビーダ"}
+.cetc{background-color:#666}
+.edat{margin-bottom:0.6em}
+
+#jmenu_icon,#jmenu{position:fixed;right:0;top:0;background-color:black;color:white;padding:6px 10px 6px 6px;font-size:1.5rem;}
+#jmenu_icon{cursor:pointer}
+#jmenu{line-height:150%}
+#jmenu hr{height:0;margin:0.4em 0;border-bottom:solid 1px white;}
+#jmenu a{text-decoration:none;display:block;}
+#jmenu a:link,#jmenu a:visited{color:white;}
+#jmenu a:hover{background-color:#ccc;color:black;}
+
+@media screen and (min-width:900px){
+#tbox{width:800px;}
+}
