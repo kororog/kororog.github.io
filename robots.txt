@@ -1,4 +1,4 @@
 User-Agent:*
 Disallow:
 
-Sitemap:https://kororog.github.io/sitemap.xml.gz
+Sitemap:https://kororog.github.io/sitemap.xml
