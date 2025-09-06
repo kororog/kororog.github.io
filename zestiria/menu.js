@@ -6,7 +6,7 @@ function add_div(name) {
 }
 
 function menu_init(url) {
-	var linkstr = ['index;TOP', 'story/index;ストーリー攻略', 'hhyoma;変異憑魔一覧', 'sp_chat;サポートタレント関連のチャット', 'skill;スキル一覧', 'attack;術技', 'degree;称号', 'weapon;武器', 'chat/index;チャットデータ', 'enemy/index;敵データ'];
+	var linkstr = ['index;TOP', 'story/index;ストーリー攻略', 'hhyoma;変異憑魔一覧', 'sp_chat;サポートタレント関連のチャット', 'prest;状態異常防止', 'skill;スキル一覧', 'attack;術技', 'degree;称号', 'bttact;バトルアクト', 'weapon;武器', 'chat/index;チャットデータ', 'enemy/index;敵データ'];
 
 	o = add_div('jmenu_icon');
 	o.onclick = menu_show;
