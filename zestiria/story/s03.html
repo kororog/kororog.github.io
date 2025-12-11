@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../def.css" type="text/css">
 <title>ゼスティリア:ストーリー攻略(3)</title>
 <script type="text/javascript" src="../menu.js"></script>
+<script type="text/javascript" src="../map.js"></script>
 </head>
 <body>
 <script>menu_init();</script>
@@ -15,14 +16,15 @@
 <div class="navi"><a href="s02.html">&lt; Prev</a> | <a href="index.html">Back</a> | <a href="s04.html">Next &gt;</a></div>
 <h1>ストーリー攻略(3)</h1>
 
-<div class="link"><a href="#l1">ラウドテブル王宮</a> / <a href="#l2">ヴィヴィア水道遺跡</a> / <a href="#l3">レディレイク</a> / <a href="#l4">フォルクエン丘陵</a> / <a href="#l5">霊峰レイフォルク</a> / <a href="#l6">フォルクエン丘陵</a></div>
+<div class="link"><a href="#l1">ラウドテブル王宮</a> / <a href="#l2">ヴィヴィア水道遺跡</a> / <a href="#l3">レディレイク</a> / <a href="#l4">フォルクエン丘陵</a> / <a href="#l5">霊峰レイフォルク</a> / <a href="#l6">フォルクエン丘陵</a> / <a href="#l7">フォルクエン丘陵 (マーリンド側)</a></div>
 
 <div class="ct">
 <h3><a name="l1"></a>ラウドテブル王宮</h3>
+<div class="map"><a href="map/map09.webp" onclick="return fixmap(this);">ラウドテブル王宮</a></div>
 <div class="st">兵士に案内されるので、ついていく。</div>
 <div class="schat">兵士が客室の前で止まった後、客室以外の部屋に近付く：<a href="#" onclick="return word(this,'ミクリオ「今は大人しくしておいた方がいい。アリーシャの体裁を悪くはできないしね」<br>スレイ「そうだな」')">★</a></div>
 <div class="st">客室に入る。</div>
-<div class="ssub">全員に話しかけるとイベントが進んでしまうため、先にディスカバリーを見ておく。</div>
+<div class="ssub">全員に話しかけるとイベントが進んでしまうので、先にディスカバリーを見ておくこと。</div>
 <div class="dis">「ラウドテブル王宮の書棚」 (本棚)
 <div class="lchat">「<a href="../chat/lc_main021.html#m024">王宮の書棚</a>」</div>
 </div>
@@ -39,6 +41,7 @@
 <div class="st">ヴィヴィア水道遺跡の王宮地下エリアへ。</div>
 
 <h3><a name="l2"></a>ヴィヴィア水道遺跡</h3>
+<div class="map"><a href="map/map06_2.webp" onclick="return fixmap(this);">ヴィヴィア水道遺跡・王宮地下エリア</a></div>
 <div class="schat">王宮の方に戻ろうとする：<a href="#" onclick="return word(this,'スレイ「当分王宮には入れないな……」')">★</a></div>
 <div class="stn">「SC・スピリッツチェイン (3)」 (入ったところから左へ行った道)</div>
 <div class="dis">「古き地下牢」 (一番最初の地下牢)
@@ -76,16 +79,18 @@
 
 <div class="ct">
 <h3><a name="l5"></a>霊峰レイフォルク</h3>
+<div class="map"><a href="map/map10_1.webp" onclick="return fixmap(this);">霊峰レイフォルク・ふもと</a></div>
 <div class="lchat">「<a href="../chat/lc_main021.html#m029">ドラゴンの棲む霊峰</a>」 (登山道入口のセーブポイント)</div>
 <div class="stn">「BG・ブラストゲージ (2)」 (登山道入口セーブポイントの近く)</div>
 <div class="st">少し進むと、戦闘。</div>
 <div class="btt">マウンテントロール</div>
 <div class="ssub">一定時間経過でイベントが発生するため、号令で「専守防衛」（右スティック↓）にしておくといい。</div>
 <div class="btt">ザビーダ①</div>
-<div class="ssub">ＨＰを一定程度減らせば終了。<br>
-水神依で遠距離から攻撃するといい。</div>
+<div class="ssub">ＨＰを一定程度減らすと、終了します。<br>
+水神依で遠距離から攻撃すると良い。</div>
 <div class="st">倒れている人を調べて弔う。</div>
-<div class="ssub">放置して進むことも可能。その場合、後のイベントが少しだけ変化する。</div>
+<div class="ssub">放置して進むこともできます。<br>
+その場合、後のイベントが少しだけ変化します。</div>
 <div class="st">少し進むと、また戦闘。</div>
 <div class="btt">男暗殺者</div>
 <div class="stn">「連携による影響 (2)」 (男暗殺者と戦った所の少し先)</div>
@@ -99,14 +104,15 @@
 ※上記の位置にいるアルマジロでしか発生しない。<br>
 ※このチャットを見ておかないと、次の丸まりイベントのチャットが発生しない。</div>
 <div class="stn">「天族チェンジ (4)」 (祠から少し進んだ所)</div>
+<div class="map"><a href="map/map10_2.webp" onclick="return fixmap(this);">霊峰レイフォルク・頂上</a></div>
 <div class="lchat">「<a href="../chat/lc_main021.html#m030">謎の天族</a>」 (中腹のセーブポイント)</div>
-<div class="st">上に進むと、ドラゴンと遭遇。</div>
+<div class="st">登っていくと、ドラゴンと遭遇。</div>
 <div class="ssub">戦闘メニューを開いて、「逃走」を選択する。</div>
 <div class="st">山を下りて、エドナを追いかける。</div>
 <div class="ssub">再び上に登ろうとすると、エドナに止められる。<br>
 もう一度登ろうとすると、別パターンで止められる。</div>
 <div class="st">エドナまたは倒れている人に近付く。</div>
-<div class="ssub">倒れている人を放置していた場合は、ここで弔って、イベントが進む。</div>
+<div class="ssub">倒れている人を放置していた場合は、ここで弔って、イベントが進みます。</div>
 <div class="st">エドナが仲間になる。</div>
 <div class="st">入口に戻って、フォルクエン丘陵へ。</div>
 <div class="lchat">「<a href="../chat/lc_main021.html#m032">スレイの脳内漫才</a>」 (登山道入口付近で自動再生)</div>
@@ -120,9 +126,9 @@
 <h3><a name="l6"></a>フォルクエン丘陵</h3>
 <div class="st">少し進むと、戦闘。</div>
 <div class="btt">「女暗殺者」</div>
-<div class="ssub">無属性に耐性あり。<br>
+<div class="ssub">【耐性：無】【種族：人】<br>
 勝利した場合と、戦闘から逃走した場合とで、直後のイベントが少し変わります。<br>
-倒した場合は、2000 ガルド入手します。勝てないようなら、逃げても良い。</div>
+倒した場合は 2000 ガルド入手できます。勝てないようなら、逃げても良いです。</div>
 <div class="st">グリフレット橋に近付く。</div>
 <div class="lchat">「<a href="../chat/lc_main021.html#m033">もう一人の謎天族</a>」 (グリフレット橋北西のセーブポイント)</div>
 <div class="schat">ネイフトと話さず、レイフォルクかレイクピロー高地に行こうとする：<a href="#" onclick="return word(this,'スレイ「まずはネイフトさんに復旧の状況を聞かないとな……」')">★</a></div>
@@ -130,13 +136,16 @@
 <div class="ssub">すぐに橋の基礎を作るか、夜まで待つかを選択します。<br>
 直後のイベントが少し変わるだけなので、どちらでもOK。</div>
 <div class="sem">橋の基礎を作った後は、すぐに先へ進むことになります。<br>
-しばらくはレディレイクの方に戻れなくなります。</div>
+しばらくはレディレイクの方に戻れません。</div>
 <div class="st">橋の基礎を作って、マーリンド側に渡る。</div>
+</div>
 
-<h3>フォルクエン丘陵（マーリンド側）</h3>
+<div class="ct">
+<h3><a name="l7"></a>フォルクエン丘陵（マーリンド側）</h3>
+<div class="map"><a href="map/map08_2.webp" onclick="return fixmap(this);">フォルクエン丘陵・マーリンド側</a></div>
 <div class="st">マーリンドへ向かう。</div>
 <div class="lchat">「<a href="../chat/lc_main021.html#m034">ご対面、エドナとアリーシャ</a>」 (グリフレット橋東岸のセーブポイント)</div>
-<div class="ssub">北と南、どちらの道からでも向かえますが、ここでは北へ進んだ場合の行程を示します。</div>
+<div class="ssub">東側と西側、どちらの道からでも向かえますが、ここでは先に東側へ進んだ場合の行程を示します。</div>
 <div class="dis">「道端の道祖神」 (北へ行き、少し進んだところにある祠)
 <div class="lchat">「<a href="../chat/lc_main021.html#m035">道端の祠</a>」</div>
 </div>
@@ -146,7 +155,7 @@
 <div class="stn">「アラウンドステップ (4)」 (変異憑魔の付近)</div>
 <div class="stn">「天族チェンジ (2)」 (マーリンド北側入口から少し南)</div>
 <div class="st">街を素通りして南へ行き、西側の道を進んで、ディスカバリーを見る。</div>
-<div class="dis">「フォルクエンリス」 (西側の道の、真ん中付近)
+<div class="dis">「フォルクエンリス」 (西側の道の、真ん中付近にいるリス)
 <div class="lchat">「<a href="../chat/lc_main021.html#m036">フォルクエンリス</a>」</div>
 </div>
 <div class="schat">ボールス遺跡かグレイブガント盆地の方に近付く：<a href="#" onclick="return word(this,'スレイ「マーリンドに早く薬を届けないと……」')">★</a></div>

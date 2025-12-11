@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../def.css" type="text/css">
 <title>ゼスティリア:ストーリー攻略(11)</title>
 <script type="text/javascript" src="../menu.js"></script>
+<script type="text/javascript" src="../map.js"></script>
 </head>
 <body>
 <script>menu_init();</script>
@@ -19,7 +20,9 @@
 
 <div class="ct">
 <h3><a name="l1"></a>ウェストロンホルドの裂け谷</h3>
+<div class="map"><a href="map/map21.webp" onclick="return fixmap(this);">パルバレイ牧耕地</a></div>
 <div class="ssub">最後の風の試練神殿へ向かうため、パルバレイ牧耕地の西から、ウェストロンホルドの裂け谷へ行きます。</div>
+<div class="map"><a href="map/map34.webp" onclick="return fixmap(this);">ウェストロンホルドの裂け谷</a></div>
 <div class="stn">「神依化 (5)」 (入口から少し進んだ所)</div>
 <div class="dis">「慰霊の石柱群」 (中央付近の看板近く)
 <div class="lchat">「<a href="../chat/lc_main101.html#m108">生贄の是非</a>」</div>
@@ -42,11 +45,13 @@
 <div class="ssub">まずは、北西の端にあるガンガレン遺跡を探索します。<br>
 マップアクションで開く道がありますが、地と風の紋章の色がわかりにくいので、形で判断した方がいいでしょう。<br>
 四角いのが地で、羽っぽいのが風です。</div>
-<div class="st">地下１階から、地下５階まで、道なりに進んでいく。</div>
+<div class="st">地下１階から地下５階まで、道なりに進んでいく。</div>
+<div class="map"><a href="map/map35_1.webp" onclick="return fixmap(this);">地下１階</a> | <a href="map/map35_2.webp" onclick="return fixmap(this);">地下２階</a> | <a href="map/map35_3.webp" onclick="return fixmap(this);">地下３階</a> | <a href="map/map35_4.webp" onclick="return fixmap(this);">地下４階</a> | <a href="map/map35_5.webp" onclick="return fixmap(this);">地下５階</a></div>
 <div class="hyoma">ボストロル [Lv49] (地下５階・最深部)<br>
+【耐性：無・火・地・風】【種族：獣人】<br>
 <br>
-水属性以外に耐性あり。種族は獣人。<br>
-水神依の「分けし天滝」（← or →＋◯、１連携目）なら、獣人の弱点を突けます。</div>
+水属性のみ耐性がないので、水神依で。<br>
+「分けし天滝」（← or →＋◯、１連携目）なら、獣人の弱点を突けます。</div>
 <div class="noru">インフィニ (変異憑魔の先の部屋)</div>
 <div class="st">先へ進んでいくと、別の道を行く帰り道となる。</div>
 <div class="dis">「ルインラット」 (地下３階：進んできた方向から見て、右側の燭台)
@@ -56,60 +61,68 @@
 
 <div class="ct">
 <h3><a name="l3"></a>風の試練神殿ギネヴィア</h3>
+<div class="map"><a href="map/map34.webp" onclick="return fixmap(this);">ウェストロンホルドの裂け谷</a></div>
 <div class="ssub">ウェストロンホルドの裂け谷の中央から南へ行き、分かれ道で東側の道を行くと、風の試練神殿へ。</div>
 <div class="st">神殿に近付くとイベント。</div>
 <div class="btt">ザビーダ②</div>
 <div class="st">倒れている男性に近付く。<br>
 選択肢によって、直後のイベントが少し変化する。</div>
+<div class="map"><a href="map/map36_01.webp" onclick="return fixmap(this);">ギネヴィア・神殿前広場</a></div>
 <div class="lchat">「<a href="../chat/lc_main101.html#m111">謎の天族ザビーダ</a>」 (神殿前広場のセーブポイント)</div>
 <div class="st">神殿外壁の右側に近付く。</div>
 <div class="st">神殿内に入る。</div>
 <div class="ssub">ここの敵は、地と水に耐性があるので、ライラとザビーダを戦闘メンバーにしておくといい。</div>
-<div class="st">下層（３階分）を道なりに進んでいき、中層へ。</div>
+<div class="st">下層（３階分）を道なりに進む。</div>
+<div class="map"><a href="map/map36_02.webp" onclick="return fixmap(this);">下層１階</a> | <a href="map/map36_03.webp" onclick="return fixmap(this);">下層２階</a> | <a href="map/map36_04.webp" onclick="return fixmap(this);">下層３階</a></div>
+<div class="st">中層（３階分）へ。</div>
 <div class="ssub">中層からは、風のマップアクションを使って風車を回すと、それぞれに対応した扉が上下に動いて、道が通れるようになります。<br>
+<em>ただし、扉が上下に移動することで、上または下の階で道が塞がってしまう場合があります。</em><br>
 <br>
-<em>ただし、扉が上の方に移動した場合、上がった扉によって、一つ上の階で道が塞がることがあります。</em><br>
-下の階から視点を見上げると、上の階の状態が確認できるので、上がった扉が道を塞いでいないか、確認してみてください。<br>
-<br>
-基本的に、塞がっている扉の先が宝箱で、その扉が上に上がった場合は、宝箱の回収後、扉をそのままにせず、風車をもう一度回して、元の位置に戻しておいた方がいいです。</div>
-<div class="dis">「壊れたハヤヒノの風車」 (中層 [6F]：中央エリアの東端)
+下の階から視点を見上げると、上の階の状態が確認できるので、上がった扉が道を塞いでいないか確認してみてください。<br>
+基本的に、扉の先が宝箱で、その扉が上に上がった場合は、宝箱の回収後、扉をそのままにせず、風車をもう一度回して、元の位置に戻しておいた方がいいです。</div>
+<div class="map"><a href="map/map36_05.webp" onclick="return fixmap(this);">中層１階</a> | <a href="map/map36_06.webp" onclick="return fixmap(this);">中層２階</a> | <a href="map/map36_07.webp" onclick="return fixmap(this);">中層３階</a></div>
+<div class="dis">「壊れたハヤヒノの風車」 (中層・３階：中央エリアの東端)
 <div class="lchat">「<a href="../chat/lc_main101.html#m112">ちょっと一息</a>」</div>
 </div>
-<div class="st">上層</div>
-<div class="ssub"><b>【１階目】</b><br>
+<div class="st">上層（３階分）へ。</div>
+<div class="map"><a href="map/map36_08.webp" onclick="return fixmap(this);">上層１階</a> | <a href="map/map36_09.webp" onclick="return fixmap(this);">上層２階</a> | <a href="map/map36_10.webp" onclick="return fixmap(this);">上層３階</a></div>
+<div class="ssub"><b>【１階】</b><br>
 1. 北東の風車を回すと、宝箱前の扉が開く。この扉はそのままで良い。<br>
 2. 南の風車を回すと、西の道の扉が開く。この扉はそのままで良い。<br>
-3. 中央の風車を回すと、北西の扉が開き、宝箱が開けられる。この扉は戻しておく。<br>
-4. ２階目へ。<br>
+3. 中央の風車を回すと、北西の扉が開き、宝箱が開けられる。<em>宝箱の回収後、この扉は戻しておく。</em><br>
+4. ２階へ。<br>
 <br>
-<b>【２階目】</b><br>
+<b>【２階】</b><br>
 ※北西の扉が閉まっている場合、下の階の中央の風車を回す。<br>
 1. 南の風車を回すと、北の宝箱前の扉が開く。この扉はそのままで良い。<br>
-2. 東の風車を回すと、南西の扉が開くので、その先で３階目へ。<br>
+2. 東の風車を回すと、南西の扉が開くので、その先で３階へ。<br>
 <br>
-<b>【３階目】</b><br>
+<b>【３階】</b><br>
 1. まっすぐ行った北西の風車を回すと、中央の扉が開く。<br>
-2. そこからすぐ近くの風車を回すと、宝箱前の扉が開く。<br>
+2. そこから少し南の風車を回すと、宝箱前の扉が開く。<br>
 3. 風のマップアクションで渡って、宝箱回収と、南東の風車を回す。北東の扉が開く。<br>
 4. 南西の転送装置から、下の階に戻る。<br>
 <br>
-<b>【２階目】</b><br>
-北東の転送装置から、３階目へ。<br>
-宝箱を回収して、先に進むと、外縁塔上部へ。</div>
+<b>【２階】</b><br>
+北東の転送装置から、３階へ。<br>
+<b>【３階】</b><br>
+西の宝箱を回収して、先に進むと、外縁塔上部へ。</div>
+<div class="map"><a href="map/map36_11.webp" onclick="return fixmap(this);">外縁塔上部</a></div>
 <div class="st">外縁塔上部に出ると、イベント。</div>
 <div class="noru">アパッド (外縁塔上部：入口から南に行き、階段の下)</div>
 <div class="st">北の先端の女性に近付く。</div>
 <div class="btt">デュラハン</div>
-<div class="ssub">無と火属性が弱点、地と水に耐性あり。種族は不死者/装甲。<br>
-火神依で「朱の新月」（← or →＋◯、１連携目）で、不死者の弱点を突ける。</div>
+<div class="ssub">【弱点：無・火】【耐性：地・水】【種族：不死者・装甲】<br>
+火神依の「朱の新月」（← or →＋◯、１連携目）で、火属性と不死者の弱点を突ける。</div>
 <div class="st">ワーデルに近付く。</div>
 <div class="ssub">デゼルが神依の秘奥義「シルフィスティア」を習得。<br>
 デゼルがシナリオスキル「神依発動時に全員の疲労を解除」を習得。</div>
 <div class="hyoma">ハーピーラッキー [Lv50] (頂上)<br>
 ※風の試練クリア後、一度神殿を出て入り直すと出現する。<br>
 <br>
-水属性以外に耐性あり。種族は有翼。<br>
-水神依で「湧くは濁刃」（↑ or ↓＋◯、２連携目）で、有翼の弱点を突ける。</div>
+【耐性：無・火・地・風】【種族：有翼】<br>
+水属性のみ耐性がないので、水神依で。<br>
+「湧くは濁刃」（↑ or ↓＋◯、２連携目）で、有翼の弱点を突ける。</div>
 <br>
 <div class="lchat">「<a href="../chat/lc_talk21.html#t22">どんつく</a>」 (任意のセーブポイント)<br>
 「<a href="../chat/lc_talk21.html#t23">偉業だよね</a>」 (任意のセーブポイント：異形の宝珠を18個以上所持)<br>
@@ -118,12 +131,16 @@
 
 <div class="ct">
 <h3><a name="l4"></a>キャメロット大陸橋</h3>
-<div class="ssub">ストーリー上はヘルダルフを探すことになりますが、この時点で、キャメロット大陸橋からヘルダルフがいなくなり、普通に渡れるようになっています。<br>
-キャメロット大陸橋以降の基本的な探索は後回しにした方が良いですが、この段階で、サブイベントを進めておく必要があります。</div>
+<div class="ssub">ストーリー上はヘルダルフを探すことになりますが、風の試練クリア後、キャメロット大陸橋からヘルダルフがいなくなり、普通に渡れるようになっています。<br>
+キャメロット大陸橋以降の基本的な探索は後回しにした方が良いですが、この段階で進めておく必要があるサブイベントが、いくつかあります。</div>
 <div class="sem">キャメロット大陸橋以降のディスカバリーのチャットは、ザビーダが仲間になっていないと発生しないものがあるため、今は無視して構いません。<br>
-また、橋の途中にいる変異憑魔・クラーケンの遭遇時のショートチャットには、ザビーダが参加しているため、ここで戦わない方がいいです。</div>
+また、橋の途中にいる変異憑魔・クラーケンの遭遇時のショートチャットには、ザビーダが参加しているため、この段階で戦わない方がいいです。</div>
+<div class="map"><a href="map/map21.webp" onclick="return fixmap(this);">パルバレイ牧耕地</a></div>
 <div class="st">パルバレイ牧耕地の北西から、キャメロット大陸橋へ。</div>
+<div class="map"><a href="map/map37_1.webp" onclick="return fixmap(this);">キャメロット大陸橋・東部</a> | <a href="map/map37_2.webp" onclick="return fixmap(this);">中央</a> | <a href="map/map37_3.webp" onclick="return fixmap(this);">西部</a></div>
 <div class="ssub"><b>サブイベント：</b> メーヴィン<br>
+※以降のメインストーリーで、ヘルダルフと戦闘をする前に行っておくこと。<br>
+<br>
 1. キャメロット大陸橋：中央キャンプ地にいる商人に話しかける。<br>
 2. ガンガレン遺跡：入口付近にいるメーヴィンに話しかける。<br>
 (ウェストロンホルドの裂け谷、北西の端)</div>
@@ -131,6 +148,7 @@
 <h3>ザフゴット原野</h3>
 <div class="sem">廃村ホルサの瞳石イベントで、ザビーダ未加入時のチャットを見たい場合は、キャメロット大陸橋を抜けて、ザフゴット原野の西にある村でイベントを進めます。<br>
 ザビーダバージョンを見たい場合は、後回しにします。</div>
+<div class="map"><a href="map/map38.webp" onclick="return fixmap(this);">ザフゴット原野</a></div>
 <div class="doseki"><a href="sub01.html#sub09">廃村ホルサ</a><br>
 1. キャメロット大陸橋の中央キャンプにいる商人に話しかける。<br>
 2. ザフゴット原野の西にある廃村ホルサで、ステンノーと戦闘。<br>
@@ -158,7 +176,7 @@ or 「<a href="../chat/lc_sub41.html#s49">スレイの葛藤（ザビーダ加�
 <br>
 ヘルダルフは、アイフリードの狩り場の、地の試練神殿前にいます。<br>
 無属性以外に耐性あり。<br>
-長期戦にはなりますが、神依化せずにコツコツ戦って、ＨＰを削っていくと良いです。<br>
+神依化せずに無属性攻撃でコツコツ戦って、ＨＰを削っていくと良いです。<br>
 <br>
 戦闘に勝利すると、ムービーの再生後、新しいセーブファイルが自動的に作成されます（場所は、パルバレイ牧耕地のアイフリードの狩り場前）。<br>
 このセーブファイルでは、バッドエンドのムービーを見たというフラグがＯＮになっており、のちに「ねこにんの里」でこのムービーを再生することができます。<br>
@@ -168,7 +186,8 @@ or 「<a href="../chat/lc_sub41.html#s49">スレイの葛藤（ザビーダ加�
 <div class="ct">
 <h3><a name="l6"></a>グレイブガント盆地</h3>
 <div class="st">ヘルダルフを探すため、グレイブガント盆地へ。</div>
-<div class="ssub">ラストンベルを出て、ヴァーグラン森林の東の道から行く。</div>
+<div class="ssub">ヴァーグラン森林の東の道から行く。</div>
+<div class="map"><a href="map/map15.webp" onclick="return fixmap(this);">ヴァーグラン森林</a></div>
 <div class="st">ローランス陣地前に近付く。</div>
 <div class="lchat">「<a href="../chat/lc_main101.html#m114">皇家の闇</a>」 (ペンドラゴ以外の宿屋に泊まる)</div>
 </div>
@@ -176,7 +195,7 @@ or 「<a href="../chat/lc_sub41.html#s49">スレイの葛藤（ザビーダ加�
 <div class="ct">
 <h3>注意</h3>
 <div class="sem">この後、ペンドラゴに入ってイベントを進めると、デゼルが離脱するため、デゼルが参加するチャットをまだ見ていない場合は、この段階で回収しておくこと。<br>
-また、穢れの坩堝でデゼルバージョンのチャットを見たい場合、クリアしていない穢れの坩堝があれば、挑戦しておくこと。</div>
+また、穢れの坩堝でデゼルバージョンのチャットを見たい場合、まだクリアしていない穢れの坩堝があれば、挑戦しておくこと。</div>
 <div class="lchat">サポートタレント関連 (デゼル参加チャット)<br>
 「<a href="../chat/lc_talk41.html#t43">隠し味</a>」 (デゼルがおやつ作りで「マドレーヌ」を作る：熟練度13以上)<br>
 「<a href="../chat/lc_talk41.html#t44">ヘタになった？</a>」 (ロゼがおやつ作りで「バタークッキー」を作る：熟練度9以上)<br>
@@ -189,7 +208,7 @@ or 「<a href="../chat/lc_sub41.html#s49">スレイの葛藤（ザビーダ加�
 <div class="ct">
 <h3><a name="l7"></a>パルバレイ牧耕地</h3>
 <div class="st">ペンドラゴ前でザビーダと戦闘。</div>
-<div class="ssub">ペンドラゴ前のセーブポイントには直接飛べないので、パルバレイ牧草地・穢れの坩堝前辺りに飛んでから向かうといい。</div>
+<div class="ssub">ペンドラゴ前のセーブポイントには直接飛べないので、パルバレイ牧草地・穢れの坩堝前辺りに飛んでから向かうと良い。</div>
 <div class="btt">ザビーダ③</div>
 <div class="schat">戦闘中、デゼルを天族チェンジして控えに送る。</div>
 <div class="lchat">「<a href="../chat/lc_main101.html#m115">ザビーダがくれたもの</a>」 (任意のセーブポイント)</div>

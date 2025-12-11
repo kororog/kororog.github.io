@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../def.css" type="text/css">
 <title>ゼスティリア:ストーリー攻略(5)</title>
 <script type="text/javascript" src="../menu.js"></script>
+<script type="text/javascript" src="../map.js"></script>
 </head>
 <body>
 <script>menu_init();</script>
@@ -19,15 +20,17 @@
 
 <div class="ct">
 <h3><a name="l1"></a>グレイブガント盆地</h3>
+<div class="map"><a href="map/map14_1.webp" onclick="return fixmap(this);">グレイブガント盆地</a></div>
 <div class="st">天幕に近付く。</div>
 <div class="noru">ランページ (ハイランド陣地内の木材のところ)</div>
 <div class="schat">グレイブガント盆地を出ようとする：<a href="#" onclick="return word(this,'スレイ「早くルーカスを探さないと……」')">★</a></div>
-<div class="stn">「防御 (3)」 (陣地から出る所の塀の後ろ。右の兵士のすぐ近く)</div>
-<div class="ssub">ここに出現する「<a href="../enemy/e03.html#e041">サヴェイジウルフ</a>」の初回遭遇時のショートチャットは、デゼルがいない場合、デゼルのセリフが再生されません。<br>
-フルバージョンで聞きたい場合は、ここでは戦わないようにして、ティンタジェル遺跡群で戦うこと。</div>
+<div class="stn">「防御 (3)」 (陣地の北出口の塀の真裏。進行方向からは見えないので注意)</div>
+<div class="ssub">ここに出現する「<a href="../enemy/e03.html#e041">サヴェイジウルフ</a>」の初回遭遇時のショートチャットは、デゼルがいない状態だと、デゼルのセリフが再生されません。<br>
+フルバージョンで聞きたい場合は、ここでは戦わないようにして、ティンタジェル遺跡群で戦うこと。<br>
+ただし、追いかけてきたら振り切るのは難しいので、避けるのは大変です。</div>
 <div class="st">陣地を出て、北の辺りに近付くと戦闘。</div>
 <div class="btt">ローランス剣兵＆ローランス槍兵（多数）</div>
-<div class="st">盆地南のエリアへ。</div>
+<div class="st">盆地中央・南のエリアへ。</div>
 <div class="lchat">「<a href="../chat/lc_main041.html#m045">英雄たちの素顔</a>」 (盆地南のダークかめ屋付近)</div>
 <div class="schat">西に行かず、東の方に行こうとする：<a href="#" onclick="return word(this,'スレイ「戦場の憑魔を浄化しないとな」')">★</a></div>
 <div class="st">西の方に進み、ランドンに近付く。</div>
@@ -37,10 +40,10 @@
 <div class="schat">イベント後、東の方へ行こうとする：<a href="#" onclick="return word(this,'スレイ「災禍の顕主……。……でも止めなくちゃ！」')">★</a></div>
 <div class="st">西の方に近付くと、戦闘。</div>
 <div class="btt">ランドン師団長</div>
-<div class="ssub">無属性が弱点で、火・地・水に耐性あり。種族は獣人。</div>
-<div class="ssub">これ以降、戦場には「憑魔化ローランス剣兵」「憑魔化ローランス槍兵」が出現します。<br>
-この２体はここでしか戦えないため、エネミーブックを埋めたいなら、戦っておくこと。<br>
-また、この敵の初回戦闘時に、イベントのショートチャットが再生されます。</div>
+<div class="ssub">【弱点・無】【耐性：火・地・水】【種族：獣人】</div>
+<div class="ssub">このボス戦以降、戦場には「憑魔化ローランス剣兵」「憑魔化ローランス槍兵」が出現します。<br>
+この２体はここでしか戦えないため、エネミーブックを埋めたい場合は戦っておくこと。<br>
+また、この敵の初回戦闘時には、イベントのショートチャットが再生されます。</div>
 <div class="schat">ローランス陣地に行かず、東の方へ行こうとする：<a href="#" onclick="return word(this,'スレイ「災禍の顕主、絶対に止める！」')">★</a></div>
 <div class="st">ローランス陣地内へ。</div>
 <div class="stn">「天響術 (3)」 (ローランス陣地内、北の塀の付近)</div>
@@ -50,21 +53,23 @@
 
 <div class="ct">
 <h3><a name="l2"></a>ヴァーグラン森林</h3>
+<div class="map"><a href="map/map15.webp" onclick="return fixmap(this);">ヴァーグラン森林</a></div>
 <div class="st">ロゼをおぶって、北の方へ進む (移動速度が遅い)。</div>
 <div class="stn">「秘奥義 (2)」 (北西に少し進んだところ)</div>
 <div class="st">イベント後、ロゼを追いかけるため、南西方向へ。</div>
 <div class="st">アジトへ向かうため、ロゼの後についていく。</div>
 <div class="schat">ロゼが立ち止まっている時に、アジトではない方向へ行こうとする：<a href="#" onclick="return word(this,'スレイ「今は大人しくアジトに行かないとな……。でも、天遺見聞録ではこの辺に遺跡なんて……」')">★</a></div>
 <div class="st">メーヴィンとの会話イベント。</div>
-<div class="ssub">スレイの衣装が「導師のいでたち」（カラバリでも可）かどうかで、セリフが一部変化する。</div>
+<div class="ssub">スレイの衣装が「導師のいでたち」（カラバリでも可）かどうかで、セリフが一部変化します。</div>
 </div>
 
 <div class="ct">
 <h3><a name="l3"></a>ティンタジェル遺跡群</h3>
+<div class="map"><a href="map/map16_1.webp" onclick="return fixmap(this);">ティンタジェル遺跡群・アジト</a></div>
 <div class="st">アジト内を見て回る。</div>
 <div class="stn">「状態異常 (2)」 (入口付近)</div>
-<div class="ssub">ジイジのキセルを渡しており、レディレイクで「テンガロンハット」を受け取っていない場合は、ベッドの部屋にある宝箱から入手できます。<br>
-ただし、ロゼが仲間になっている状態で宝箱に近付いた場合は、ショートチャットが再生されるため、ここで開けないほうがいい。</div>
+<div class="ssub">ジイジのキセルを渡しており、レディレイクで「テンガロンハット」を受け取っていない場合は、東の部屋の奥にある宝箱から入手できます。<br>
+ただし、ロゼが仲間になった状態で（開けていない）宝箱に近づくと、ショートチャットが再生されるため、それを見たい場合は後にします。</div>
 <div class="st">遺跡の扉を調べる。</div>
 <div class="st">ベッドを調べて休む。仲間が復帰。</div>
 <div class="lchat">「<a href="../chat/lc_main041.html#m046">暗殺者のイメージが……</a>」 (小部屋のセーブポイント)</div>
@@ -72,7 +77,7 @@
 <div class="st">アジトから出ようとすると、イベント。</div>
 <div class="st">遺跡探検をすることに。</div>
 <div class="lchat">「<a href="../chat/lc_main041.html#m047">泣いてない！</a>」 (小部屋のセーブポイント)<br>
-※遺跡の扉に近付くと、仲間が一時的に離脱するため、その間はチャットを再生できない。<br>
+※遺跡の扉に近付くと、仲間が一時的に離脱するため、その間はチャットを再生できません。<br>
 チャットを先に見たい場合は、遺跡の扉に近付かないようにして、小部屋に移動すること。</div>
 <div class="st">遺跡の扉に近付くと、仲間が一時的に離脱。</div>
 <div class="st">各キャラと話す。</div>
@@ -81,6 +86,7 @@
 <div class="st">扉を調べると、扉が開き、仲間が合流。</div>
 
 <h3>遺跡内 (1)</h3>
+<div class="map"><a href="map/map16_2.webp" onclick="return fixmap(this);">ティンタジェル遺跡群・上層</a></div>
 <div class="st">遺跡内を進むと、部屋に閉じ込められる。</div>
 <div class="st">部屋の扉を調べる。</div>
 <div class="st">部屋の４方の扉と壁を調べる。</div>
@@ -89,20 +95,23 @@
 ライラの場合は、戦闘。<br>
 エドナの場合は、トラップが作動する。</div>
 <div class="st">エドナと話した場合、時間経過で煙が充満するため、正しい順番で、床の４つのスイッチを踏む。</div>
-<div class="ssub">正解のスイッチを踏むと高い音が鳴るので、続けて次のスイッチを踏む。<br>
-間違ったスイッチを踏むと低い音が鳴り、最初からやり直しになる。<br>
-間違った場合は、その順番の時に別のスイッチを踏んで、正解のパターンを試していく。<br>
-正解：左上→右下→右上→左下（入ってきた方の扉を正面に見た場合）<br>
+<div class="ssub">正解のスイッチを踏むと高い音が鳴るので、続けて次のスイッチを踏みます。<br>
+間違ったスイッチを踏むと低い音が鳴り、最初からやり直しになります。<br>
+間違った場合は、その順番の時に別のスイッチを踏んで、正解のパターンを探していきます。<br>
 <br>
-時間切れになった場合は、やり直しになる。<br>
-なお、正解のスイッチを踏むたびに、３つのショートチャットが再生されるので、まずはロゼとのショートチャットが終わるまで待ち、そこから各スイッチを踏んでいき、チャットが終わるまで待った後、次のスイッチを踏むといい。</div>
+正解【左上 → 右下 → 右上 → 左下】<br>
+（入ってきた方の扉を正面に見た場合。マップ上の向きとは反対です）<br>
+<br>
+時間切れになった場合は、やり直しになります。<br>
+なお、正解のスイッチを踏むたびに、３つのショートチャットが再生されるので、まずはロゼとのショートチャットが終わるまで待ち、そこから各スイッチを踏んでいき、チャットが終わるまで待った後、次のスイッチを踏むと良いです。</div>
 <div class="st">扉が開く。</div>
 <div class="schat">扉が開いた後、遺跡出口のはしごに近付く：<a href="#" onclick="return word(this,'スレイ「早くロゼのところに行かないと！」')">★</a></div>
 <div class="st">奥に進むと、戦闘。</div>
 <div class="btt">ドラゴニュート</div>
-<div class="ssub">風属性以外に耐性があります。<br>
-特に地属性の耐性が高いので、ライラかミクリオで戦うといいでしょう。<br>
-竜種族の特技を習得していれば、属性の耐性＋種族の弱点で、ダメージは相殺されます。<br>
+<div class="ssub">【弱点：風】【耐性：無・火・水・地】【種族：竜】<br>
+<br>
+地属性に対する耐性が高いため、ライラかミクリオで戦うといいでしょう。<br>
+竜種族の術技を習得していれば、属性耐性×種族弱点で相殺されます。<br>
 <br>
 一度目は、一定時間経過でイベントに移行します。<br>
 <br>
@@ -111,7 +120,7 @@
 時間がかかりすぎると思ったら、戦闘ランクを下げてみるのも一つの手です。<br>
 <br>
 三度目でようやく倒せます。<br>
-デゼルと神依化すれば問題ありません。</div>
+風神依で、風の弱点を突きましょう。</div>
 <div class="st">ロゼとデゼルが仲間になる。</div>
 <div class="st">仲間達と話す。</div>
 <div class="ssub">デゼルと話すと、デゼルの称号「風の復讐者」習得。<br>
@@ -128,16 +137,20 @@
 <h3>遺跡内 (2)</h3>
 <div class="st">セーブポイント近くの扉を開けて、一つ前の部屋に戻る。</div>
 <div class="st">東西どちらかの道を行くが、ここでは東から行くことにする。</div>
-<div class="ssub">風のマップアクションを使うと、途切れている道の先へ移動できるようになる。</div>
+<div class="ssub">風のマップアクションを使うと、途切れている道の先へ移動できるようになります。</div>
+<div class="map"><a href="map/map16_3.webp" onclick="return fixmap(this);">ティンタジェル遺跡群・下層</a></div>
 <div class="st">東に進むと、丸い部屋にスイッチがあるので、踏んでおく。</div>
-<div class="st">進んで、中央の部屋にある瞳石に近付く。<br>黄の瞳石・ドヴァーを入手 (固定)。</div>
+<div class="st">西方向に進んで、中央の部屋にある瞳石に近付く。<br>黄の瞳石・ドヴァーを入手。</div>
 <div class="lchat">「<a href="../chat/lc_main161.html#m161">大地の記憶を見て３</a>」 (固定)</div>
 <div class="st">その近くにスイッチがあるので、踏む。</div>
-<div class="st">その部屋から、もう一方のエリアに行く。</div>
+<div class="st">さらに西に進む。</div>
 <div class="stn">「３つの術技 (3)」 (西エリア：東側通路の北西位置の突き当り)</div>
 <div class="st">西の部屋の真ん中の小さい区画にスイッチがあるので踏む。</div>
+<div class="st">西の長い道の先に行くと、ヴァーグラン森林・中央北のエリアに出る。</div>
+<div class="map"><a href="map/map15.webp" onclick="return fixmap(this);">ヴァーグラン森林</a></div>
 <div class="noru">ブロック (西エリア：西の長い道を行き、ヴァーグラン森林に出たところ)</div>
-<div class="st">オイシがいる部屋に戻る。</div>
+<div class="st">スイッチを３つ踏んだら、オイシがいる部屋に戻る。</div>
+<div class="map"><a href="map/map16_2.webp" onclick="return fixmap(this);">ティンタジェル遺跡群・上層</a></div>
 <div class="st">床が出現して、奥の方に行けるようになっているので、風のマップアクションで進む。</div>
 <div class="st">扉手前の宝箱から「銀の鍵」入手。</div>
 <div class="st">扉を開けて、奥の部屋に近付く。</div>
@@ -145,21 +158,25 @@
 <div class="lchat">「<a href="../chat/lc_main041.html#m051">壁画の様式</a>」</div>
 </div>
 <div class="stn">「操作モード変更 (3)」 (奥の部屋)</div>
-<div class="lchat">「<a href="../chat/lc_main041.html#m050">最初から見えてたら</a>」 (遺跡内のセーブポイント)</div>
+<div class="lchat">「<a href="../chat/lc_main041.html#m050">最初から見えてたら</a>」 (ティンタジェル遺跡内のセーブポイント)</div>
 <div class="st">戻って、オイシに近付く。</div>
-<div class="ssub">西エリアのヴァーグラン森林に出るところに、銀の宝箱があるので、回収しておくといい。</div>
+<div class="ssub">西エリアのヴァーグラン森林に出るところに、銀の宝箱があるので、回収しておくといい。
+<div class="map"><a href="map/map16_3.webp" onclick="return fixmap(this);">ティンタジェル遺跡群・下層</a> | <a href="map/map15.webp" onclick="return fixmap(this);">ヴァーグラン森林</a></div>
+</div>
 <div class="st">アジトに戻る。</div>
 <div class="st">自動的にヴァーグラン森林へ。まずはペンドラゴへ向かうことになる。</div>
 <div class="st">その前に、アジト内の宝箱を回収しておく。<br>
-小部屋の付近に、風のマップアクションで進める部屋がある。</div>
-<div class="ssub">ジイジのキセルを渡して、レディレイクでテンガロンハットを受け取っていなかった場合、ベッドで寝られる部屋にある、テンガロンハットの宝箱を開けておきます。<br>
+南西位置に、風のマップアクションで進める部屋がある。</div>
+<div class="map"><a href="map/map16_1.webp" onclick="return fixmap(this);">ティンタジェル遺跡群・アジト</a></div>
+<div class="ssub">ジイジのキセルを渡して、レディレイクでテンガロンハットを受け取っていなかった場合、東の部屋にある宝箱を開けて入手します。<br>
 ロゼが仲間になっている状態で宝箱に近付いた場合は、ショートチャットが再生されます。</div>
 </div>
 
 <div class="ct">
 <h3><a name="l4"></a>ヴァーグラン森林</h3>
+<div class="map"><a href="map/map15.webp" onclick="return fixmap(this);">ヴァーグラン森林</a></div>
 <div class="st">まずは、ヴァーグラン森林を探索。</div>
-<div class="ssub">ヴァーグラン森林の敵はまだ未遭遇なので、初回遭遇のショートチャットを見るためにも、周辺の敵と戦っておくといい。<br>
+<div class="ssub">ヴァーグラン森林の敵はまだ未遭遇なので、初回遭遇のショートチャットを見るためにも、周辺の敵と戦っておくと良いです。<br>
 西にある街には、まだ入らないこと。</div>
 <div class="lchat">「<a href="../chat/lc_main041.html#m052">戦う強さ</a>」 (ティンタジェル遺跡群前のセーブポイント)</div>
 <div class="lchat">おやつ作成後、任意のセーブポイントで再生。<br>
@@ -172,18 +189,24 @@
 <div class="dis">「ヴァーグランオオクワガタ」<br>(ヴァーグラン森林の北西、街の少し手前あたりの、道がくびれている所の、木の根本)
 <div class="lchat">「<a href="../chat/lc_main041.html#m053">デカいクワガタ</a>」</div>
 </div>
-<div class="ssub">南にあるラモラック洞穴は探索することができます。<br>
-ストーリー上、ラモラック洞穴は後で通ることになりますが、この段階でも探索は可能です。</div>
-<div class="st">南へ行き、風のマップアクションを使って、奥にある洞窟へ。</div>
+<div class="ssub">そこから少し南へ進んで、街の方に近付くと、ショートチャットが始まります。<br>
+さらに街の門の手前あたりに近付くと、イベントが発生します。<br>
+<em>※イベントが始まると、再生中のショートチャットは強制終了してしまうので、ショートチャットが始まったら、移動せずに終わるまで待った方が良いです。</em></div>
+<div class="noru">ルーン (街から少し北東にある岩の上)</div>
+<div class="st">ひと通り探索したら、南にあるラモラック洞穴へ。<br>
+風のマップアクションで奥の洞窟に渡れます。</div>
+<div class="ssub">ストーリー上、ラモラック洞穴は後で通ることになりますが、この段階でも探索は可能です。</div>
 </div>
 
 <div class="ct">
 <h3><a name="l5"></a>ラモラック洞穴</h3>
+<div class="map"><a href="map/map17_1.webp" onclick="return fixmap(this);">ラモラック洞穴・南西部</a></div>
 <div class="ssub">所々岩があるため、風のマップアクションで進めない箇所があります。<br>
 地のマップアクションが使えるようになると、岩を壊してショートカットできるようになります。</div>
 <div class="stn">「号令 (2)」 (南西部：入口から少し進んだ所。進行方向からは見えないので後ろを振り返る)</div>
 <div class="st">まずは南西部を一周して、宝箱など回収。</div>
 <div class="st">北の方の道を行き、中央部へ。</div>
+<div class="map"><a href="map/map17_2.webp" onclick="return fixmap(this);">ラモラック洞穴・中央部/北東部</a></div>
 <div class="dis">「石黄」<br>
 (中央部：風のマップアクションで行ける宝箱の小部屋から、少し南の所にある黄色い岩)
 <div class="lchat">「<a href="../chat/lc_main041.html#m055">石の用法</a>」</div>
@@ -196,16 +219,15 @@
 <div class="st">北東部には、今のところ変異憑魔以外何もないので、中央部へ戻って、南の道を行く。</div>
 <div class="noru">グッドウィル (中央部：南東の端のエリアから、一つ西に行ったところ)</div>
 <div class="st">西へ行き、南西部へ。</div>
+<div class="map"><a href="map/map17_1.webp" onclick="return fixmap(this);">ラモラック洞穴・南西部</a></div>
 <div class="stn">「応用テクニック (3)」 (南西部：南東の小さい区画)</div>
 <div class="ssub">現状ではここまでしか行けないので、中央部→南西部と戻って、ラモラック洞穴から出る。</div>
 </div>
 
 <div class="ct">
 <h3><a name="l6"></a>ヴァーグラン森林</h3>
+<div class="map"><a href="map/map15.webp" onclick="return fixmap(this);">ヴァーグラン森林</a></div>
 <div class="st">西の街へ向かう。</div>
-<div class="ssub">街の方に近付くと、ショートチャットが始まり、さらに街の門の手前あたりに近付くと、イベントが発生します。<br>
-イベントが始まると、ショートチャットは強制終了してしまうので、ショートチャットが終わるまでは移動せずに止まった方がいい。</div>
-<div class="noru">ルーン (街から少し北東にある岩の上)</div>
 <div class="stn">「難易度について (4)」 (街の手前の南位置)</div>
 <div class="lchat">「<a href="../chat/lc_main041.html#m057">自分だけの術</a>」 (ラストンベル前のセーブポイント)</div>
 <div class="st">街の門の手前あたりに近付くと、イベント。</div>

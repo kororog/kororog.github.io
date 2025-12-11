@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../def.css" type="text/css">
 <title>ゼスティリア:ストーリー攻略(7)</title>
 <script type="text/javascript" src="../menu.js"></script>
+<script type="text/javascript" src="../map.js"></script>
 </head>
 <body>
 <script>menu_init();</script>
@@ -19,6 +20,7 @@
 
 <div class="ct">
 <h3><a name="l1"></a>聖なる皇都ペンドラゴ</h3>
+<div class="map"><a href="map/map23_1.webp" onclick="return fixmap(this);">ペンドラゴ・北部市街</a></div>
 <div class="dis">「広場の噴水」 (入口からまっすぐ行った噴水)
 <div class="lchat">「<a href="../chat/lc_main061.html#m070">憤怒の噴水</a>」</div>
 </div>
@@ -28,7 +30,9 @@
 <div class="lchat">「<a href="../chat/lc_talk01.html#t11">グリンウッドの民話</a>」 (ペンドラゴ宿屋に泊まる [確率])</div>
 <div class="noru">ガイザー (北部市街：南西のベンチの上)</div>
 <div class="stn">「神依化 (4)」 (北部市街：高台の先の細い道の突き当り)</div>
+<div class="map"><a href="map/map23_2.webp" onclick="return fixmap(this);">ペンドラゴ・東部市街</a></div>
 <div class="ssub">東部市街の南東位置にかめにんがいるので、「冒険の地図・帝都周辺」を購入。</div>
+<div class="map"><a href="map/map23_3.webp" onclick="return fixmap(this);">ペンドラゴ・城教区域</a></div>
 <div class="schat">教会神殿の扉に近付く：<a href="#" onclick="return word(this,'スレイ「これが教会神殿……」<br>ミクリオ「興味深いけど、さすがに今入るのはまずいだろうね」')">★</a></div>
 <div class="st">城教区域の騎士団塔に入る。</div>
 <div class="lchat">「<a href="../chat/lc_main161.html#m175">ゲオルグ・ヘルダルフ</a>」 (肖像画付近。大地の記憶でヘルダルフを見ている場合)</div>
@@ -63,12 +67,14 @@
 「<a href="../chat/lc_sys01.html#y04">うまいは気から</a>」 (任意のセーブポイント)</div>
 <div class="sem">ここでペンドラゴを出ると、しばらく入れなくなります。</div>
 <div class="st">ペンドラゴの出口で、水のマップアクションを使って、見張りの目を誤魔化す。</div>
-<div class="schat">水のマップアクションを使わずに出ようとすると、エドナ→デゼル→ミクリオの順で、３通りのショートチャットが発生する。</div>
+<div class="schat">水のマップアクションを使わずに出ようとすると、エドナ→デゼル→ミクリオの順で、３通りのショートチャットが発生。</div>
 <div class="st">ペンドラゴから出る。</div>
 <div class="schat">ペンドラゴの入口に近付く：<a href="#" onclick="return word(this,'スレイ「監視が居たし、導師の秘力を手に入れるまで、ペンドラゴには戻らない方が良いな」')">★</a></div>
 <div class="st">ゴドジンへ向かうことになる。</div>
 <div class="ssub">ペンドラゴから出て、パルバレイ牧耕地を北東に向かい、凱旋草海に戻ります。<br>
 まずはラストンベルに行ってチャットを見た後、凱旋草海からカンブリア地底洞へ向かいます。</div>
+<div class="map"><a href="map/map21.webp" onclick="return fixmap(this);">パルバレイ牧耕地</a></div>
+<div class="map"><a href="map/map19.webp" onclick="return fixmap(this);">凱旋草海</a></div>
 </div>
 
 <div class="ct">
@@ -77,23 +83,29 @@
 
 <h3>凱旋草海</h3>
 <div class="st">南西の道（ヤギのディスカバリーの先）へ行き、カンブリア地底洞へ。</div>
+<div class="map"><a href="map/map19.webp" onclick="return fixmap(this);">凱旋草海</a></div>
 </div>
 
 <div class="ct">
 <h3><a name="l3"></a>カンブリア地底洞</h3>
+<div class="map"><a href="map/map24_1.webp" onclick="return fixmap(this);">カンブリア地底洞・上層</a></div>
 <div class="lchat">「<a href="../chat/lc_main081.html#m082">ロマンボーイズ</a>」 (北部出口付近のセーブポイント)</div>
 <div class="ssub">西の道からまっすぐ南へ行くと、洞窟を抜けて目的地へ行けますが、まずは東の道を行って探索します。</div>
 <div class="st">東の道を行って南に行くと、途中で床が崩れて下に落ちるので、先に進む。</div>
+<div class="map"><a href="map/map24_2.webp" onclick="return fixmap(this);">カンブリア地底洞・下層</a></div>
 <div class="st">足場の岩が点在している所は、風のマップアクションを使って進む。</div>
-<div class="ssub">足場の岩は、乗ると崩れるものがあるので注意。<br>
-崩れる岩は、よく見ると色が少し濃く形も違うので、判別は可能。</div>
-<div class="st">岩のエリアを抜けた後、北の方に進んだら、ツタで崖を登るところがある。<br>
+<div class="map"><a href="map/map24_3.webp" onclick="return fixmap(this);">カンブリア地底洞・南の岩場</a></div>
+<div class="ssub">南の足場の岩は、乗ると崩れるものがあるので注意。<br>
+崩れる岩は、よく見ると色が少し濃くて形も違うので、判別は可能。</div>
+<div class="st">南の岩場を抜けた後、北の方に進んだら、ツタで崖を登るところがある。<br>
 その下から壁の方を見上げると、ディスカバリーがある。</div>
 <div class="dis">「謎の巨大生物の化石」
 <div class="lchat">「<a href="../chat/lc_main061.html#m076">謎の化石</a>」</div>
 </div>
+<div class="st">ツタで崖を登る。</div>
+<div class="map"><a href="map/map24_1.webp" onclick="return fixmap(this);">カンブリア地底洞・上層</a></div>
 <div class="stn">「BG・ブラストゲージ (4)」 (「謎の巨大生物の化石」から少し西)</div>
-<div class="st">崖を上がった所から北の道を行き、湖のエリアに行くと、入口の方に戻れる。</div>
+<div class="st">北の崖を上がって、湖のエリアに行く。</div>
 <div class="hyoma">九頭竜 [Lv44] (北東エリアの湖付近)<br>
 現状では勝てない。</div>
 <div class="dis">「発光微生物」 (湖のエリアの北の道を行き、狭い部屋の中央)
@@ -102,13 +114,14 @@
 <div class="doseki">ラストンベルの加護天族<br>
 ラストンベルの中央にいる天族と話していた場合、湖に落ちている瞳石を調べるとイベント。<br>
 <br>
-※このイベントを行うと、ラストンベル宿屋で、加護天族のイベントが発生します（その前に、特定の人物に話しかけることが必要）。<br>
+※このイベントを行うと、ラストンベル宿屋で、加護天族のイベントが発生します。<br>
+（その前に、特定の人物に話しかけることが必要）<br>
 このイベントクリア時に発生するチャットは３通りあるため、見たいチャットに合わせて、この瞳石を調べる時期を調整しましょう。<br>
 <br>
  > 「霊応力の罪とロゼの価値観」 (ペンドラゴ教会神殿クリアまで)<br>
  > 「霊応力の罪 (デゼル)」 (ペンドラゴ教会神殿クリア後、ザビーダが加入するまで)<br>
  > 「霊応力の罪 (ザビーダ)」 (ザビーダ加入後)</div>
-<div class="st">湖のエリアから西の道を行くと、入口の方に戻れる。</div>
+<div class="st">湖のエリアから西に行って、崖を飛び降りると、入口の方に戻れる。</div>
 <div class="sem">上記の瞳石イベントを行った場合、この段階でラストンベルの加護を取り戻せるので、加護の復活を優先したい場合は、ラストンベルに戻る。<br>
 ＞ <a href="sub01.html#sub01">ラストンベルの加護復活</a></div>
 <div class="st">入口に戻り、西の道を行って、南にまっすぐ行く。</div>
@@ -121,7 +134,8 @@
 <h3><a name="l4"></a>バイロブクリフ崖道</h3>
 <div class="st">地底洞から出ると、戦闘。</div>
 <div class="btt">グリフォン</div>
-<div class="ssub">火と地が弱点。水と風に耐性あり。</div>
+<div class="ssub">【弱点：火・地】【耐性：水・風】【種族：竜・有翼】</div>
+<div class="map"><a href="map/map25.webp" onclick="return fixmap(this);">バイロブクリフ崖道</a></div>
 <div class="st">探索しつつ、西のゴドジンへ向かう。</div>
 <div class="st">植物の壁はスレイのマップアクションで取り除き、風のマップアクションを使って先へ進む。</div>
 <div class="st">南の道を行くとゴドジンなので、まずは西の丘の方へ。</div>
@@ -141,13 +155,14 @@
 <div class="dis">「グリフィカイト」 (南の道を東に行った先の突き当り)
 <div class="lchat">「<a href="../chat/lc_main061.html#m078">グリフィカイト</a>」</div>
 </div>
-<div class="st">戻って西の道を行くと、ゴドジンへ。</div>
+<div class="st">戻って西に進み、ゴドジンへ。</div>
 <div class="stn">「号令 (3)」 (ゴドジンの門付近)</div>
 <div class="st">ゴドジンに入る。</div>
 </div>
 
 <div class="ct">
 <h3><a name="l5"></a>忘れられた村ゴドジン</h3>
+<div class="map"><a href="map/map26.webp" onclick="return fixmap(this);">ゴドジン</a></div>
 <div class="st">村に入るとイベント。</div>
 <div class="schat">仲間と話さず、出口に近付く：<a href="#" onclick="return word(this,'スレイ「この村のこと、少し調べてみないとな」')">★</a></div>
 <div class="st">村の中の仲間達と話す（任意）。</div>
@@ -174,15 +189,16 @@
 <div class="lchat">「<a href="../chat/lc_talk01.html#t15">遅れてせまりくるアイツ</a>」 (任意のセーブポイント)<br>
 「<a href="../chat/lc_main081.html#m085">教皇の人間性</a>」 (ゴドジン宿屋に泊まる)</div>
 <div class="ssub">地のマップアクションが使えるようになったので、岩で塞がれていた道などが通れるようになります。<br>
-イデル鍾洞、緑青林マロリー、ガフェリス遺跡などの先が進めるようになっているので、火の試練の前にそちらを探索しても良い。<br>
-ただ、火の試練をクリアする前に、バイロブクリフ崖道の東側で、ディスカバリーのチャットは見ておくこと。</div>
+イデル鍾洞、緑青林マロリー、ガフェリス遺跡などの先が進めるようになっているので、火の試練の前にそちらを探索しても良いです。<br>
+ただし、火の試練をクリアする前に、バイロブクリフ崖道の東側で、ディスカバリーのチャットは見ておくこと。</div>
 
 <h3>バイロブクリフ崖道</h3>
+<div class="map"><a href="map/map25.webp" onclick="return fixmap(this);">バイロブクリフ崖道</a></div>
 <div class="ssub">丘のある所から北（右側）の道を行き、岩を壊しながら進む。<br>
 ここを先に進むと凱旋草海に出られる。</div>
 <div class="dis">「崖地のハーブ」 (北の道を抜けた左側にある、緑の草)
 <div class="lchat">「<a href="../chat/lc_main061.html#m079">風とハーブ</a>」</div>
-<em>※火の試練をクリアしてしまうと、チャットが発生しない。</em>
+<em>※火の試練のクリア後だと、チャットが発生しません。</em>
 </div>
 
 <div class="st">火の試練神殿へ。</div>

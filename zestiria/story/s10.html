@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../def.css" type="text/css">
 <title>ゼスティリア:ストーリー攻略(10)</title>
 <script type="text/javascript" src="../menu.js"></script>
+<script type="text/javascript" src="../map.js"></script>
 </head>
 <body>
 <script>menu_init();</script>
@@ -23,32 +24,38 @@
 ヴァーグラン森林の南にあるラモラック洞穴から、マーリンド近くのボールス遺跡に出て、そこからグリフレット橋へ向かいます。
 
 <h3>ヴァーグラン森林</h3>
+<div class="map"><a href="map/map15.webp" onclick="return fixmap(this);">ヴァーグラン森林</a></div>
 <div class="st">南へ行き、風のマップアクションを使って先に渡り、ラモラック洞穴へ。</div>
 <h3><a name="l1"></a>ラモラック洞穴</h3>
 <div class="ssub">所々岩があるので、地のマップアクションで壊しておくと良い。</div>
+<div class="map"><a href="map/map17_1.webp" onclick="return fixmap(this);">ラモラック洞穴・南西部</a></div>
 <div class="st">北へ行き、中央部へ。</div>
+<div class="map"><a href="map/map17_2.webp" onclick="return fixmap(this);">ラモラック洞穴・中央部/北東部</a></div>
 <div class="st">中央部を南東方向に進む。</div>
-<div class="st">東の方に行くと出口だが、南の先に進んで、岩を壊しておくと、ショートカットできるようになる。</div>
+<div class="st">東の方に行くと出口だが、南の先に進んで岩を壊しておくと、入口からショートカットできるようになる。</div>
 <div class="st">中央部を東に進んで、北東部へ。</div>
 <div class="hyoma">バットバロン [Lv40] (北東部)<br>
-<br>
-無・地・水に耐性あり。種族は有翼。</div>
+【耐性：無・地・水】【種族：有翼】</div>
 <div class="st">北東部の北にある岩を壊して、ボールス遺跡へ。</div>
 
 <h3>ボールス遺跡</h3>
 <div class="st">ボールス遺跡・南東部に出るので、岩を壊しつつ宝箱を回収し、フォルクエン丘陵へ出る。</div>
+<div class="map"><a href="map/map13_2.webp" onclick="return fixmap(this);">ボールス遺跡・南東部</a> | <a href="map/map13_1.webp" onclick="return fixmap(this);">北西部</a></div>
 
 <h3>フォルクエン丘陵</h3>
+<div class="map"><a href="map/map08_2.webp" onclick="return fixmap(this);">フォルクエン丘陵・マーリンド側</a></div>
 <div class="hyoma">ホルス [Lv24] (マーリンド北口の上)</div>
 <div class="st">グリフレット橋にいるアリーシャに近付く。</div>
 <div class="st">橋を渡った先のアリーシャに話しかける。</div>
 <div class="lchat">「<a href="../chat/lc_main101.html#m102">アリーシャも本当は……</a>」 (グリフレット橋北西のセーブポイント)</div>
+<div class="map"><a href="map/map08_1.webp" onclick="return fixmap(this);">フォルクエン丘陵・レディレイク側</a></div>
 <div class="schat">レイクピロー高地の方へ進む（セーブポイントの少し先）。<br>
 ※セーブポイント間移動で一気に移動してしまうと、聞き逃します。</div>
 
 <h3>霊峰レイフォルク</h3>
 <div class="ssub">風と地のマップアクションで進める所があるので、宝箱等の回収を行いつつ、頂上でアイゼンと戦ってみるといいでしょう（勝てないので逃げること）。<br>
 戦闘中にショートチャットが聞けます。</div>
+<div class="map"><a href="map/map10_1.webp" onclick="return fixmap(this);">霊峰レイフォルク・ふもと</a> | <a href="map/map10_2.webp" onclick="return fixmap(this);">頂上</a></div>
 <div class="noru">ウィンド (頂上付近のセーブポイントから南に行った突き当り)</div>
 </div>
 
@@ -57,6 +64,7 @@
 <div class="ssub">まずは、サブイベントを進めておきます。</div>
 <div class="doseki"><a href="sub01.html#sub06">スリの少年</a><br>
 <em>※大地の記憶とイベントのチャットで、ザビーダバージョンを見たい場合は、後回しにする。</em><br>
+<br>
 1. レディレイク：貴族街の入口の人だかりに近付く。<br>
 2. 中央区の裏路地に行く。<br>
 3. 子供の後をつけて、貴族街の屋敷に近付く。<br>
@@ -70,6 +78,7 @@
 
 <div class="doseki"><a href="sub01.html#sub07">アリーシャ</a><br>
 <em>※大地の記憶とイベントのチャットで、ザビーダバージョンを見たい場合は、後回しにする。</em><br>
+<br>
 1. レディレイク：貴族街のアリーシャの屋敷にいるメイドに話しかける。<br>
 2. 貴族街の入口にいる商人に話しかける。<br>
 （他にも、中央区の裏路地にいる商人や、宿屋にいる商人から話を聞ける）<br>
@@ -93,7 +102,8 @@
 <div class="ct">
 <h3><a name="l3"></a>アロダイトの森</h3>
 <div class="ssub">サブイベントのため、イズチへ向かいます。<br>
-アロダイトの森で、道にある岩を壊して、宝箱等を回収しておくとよい。</div>
+アロダイトの森で、道にある岩を壊して、宝箱等を回収しておきます。</div>
+<div class="map"><a href="map/map03_2.webp" onclick="return fixmap(this);">アロダイトの森（終盤）</a></div>
 <div class="noru">ペネトレイト (一番南)</div>
 <div class="dis">「食用キノコと毒キノコ」 (↑のノルミンから少し北西に行ったところ)
 <div class="lchat">「<a href="../chat/lc_main081.html#m094">キノコの森</a>」</div>
@@ -109,12 +119,12 @@
 <br>
 ※キセルを所持していなくても、このサブイベントは先に進めることができます。<br>
 ラストンベルでおじいさんからキセルを購入して、再度ジイジと話せば、改めてキセルを返すことができます。</div>
-<div class="schat">キセルを所持していない状態でジイジと話した後：<a href="#" onclick="return word(this,'ミクリオ「キセル、お気に入りだったんだな。売ったのまずかったんじゃないか？」<br>スレイ「か、かもな……」')">★</a></div>
+<div class="schat">キセルを所持していない状態でジイジと話した直後：<a href="#" onclick="return word(this,'ミクリオ「キセル、お気に入りだったんだな。売ったのまずかったんじゃないか？」<br>スレイ「か、かもな……」')">★</a></div>
 <div class="st">イズチでゆっくりすることになる。</div>
 <div class="schat">アロダイトの森に近付く：<a href="#" onclick="return word(this,'スレイ「今回はゆっくりのんびりしよう」')">★</a></div>
 <div class="st">遺跡の方の森の奥にいるミクリオに近付く。</div>
 <div class="lchat">「<a href="../chat/lc_sub21.html#s21">聞かなくても平気</a>」 (自動再生)</div>
-<div class="schat">遺跡の森の奥の階段に近付く：<a href="#" onclick="return word(this,'スレイ「今はやめといた方が良いよな……」')">★</a></div>
+<div class="schat">イベントの後、遺跡の森の奥の階段に近付く：<a href="#" onclick="return word(this,'スレイ「今はやめといた方が良いよな……」')">★</a></div>
 <div class="st">村の門から少し離れた後、村の門の前にいるライラに話しかける。</div>
 <div class="lchat">「<a href="../chat/lc_sub01.html#s20">ライラとジイジ</a>」 (スレイの家のセーブポイント)</div>
 </div>
@@ -122,6 +132,7 @@
 <div class="ct">
 <h3>レイクピロー高地</h3>
 <div class="ssub">水の試練神殿に向かうため、レイクピロー高地の北にある滝に向かいます。</div>
+<div class="map"><a href="map/map04_1.webp" onclick="return fixmap(this);">レイクピロー高地・南</a> | <a href="map/map04_2.webp" onclick="return fixmap(this);">レイクピロー高地・北</a></div>
 <div class="lchat">「<a href="../chat/lc_main101.html#m103">拘束されたアリーシャ</a>」 (モーガン大滝付近のセーブポイント)</div>
 <div class="hyoma">まだ倒していない場合は、ついでに倒しておく。<br>
 マーナガルム [Lv19] (川を渡った少し先)</div>
@@ -136,11 +147,13 @@
 <br>
 最初の方の部屋は、水のマップアクションが必要となる道の床にマークがあるため、それを参考にするといいでしょう（後半の部屋ではマークはありません）。<br>
 なお、部屋の中には、どうやっても進めない場所がいくつかあるので、その場合は、まだ行っていない別の道を進んでください。</div>
+<div class="map"><a href="map/map33_1.webp" onclick="return fixmap(this);">ルーフェイ・１階</a></div>
 <div class="st">最初の分かれ道は、右に進む（左側は床３マス分なので、渡れない）。</div>
 <div class="st">突き当りで階段を上がり、２階へ。</div>
+<div class="map"><a href="map/map33_2.webp" onclick="return fixmap(this);">ルーフェイ・２階</a></div>
 <div class="st">まずは西へ行く。</div>
-<div class="ssub">扉の先の部屋は、１マス目から水のマップアクションを使うので、扉を開けた所で立ち止まって、周囲を確認すること。</div>
-<div class="st">階段は上れないので、扉の先へ。※床のマークに注意</div>
+<div class="ssub">※北西位置の部屋は、１マス目から水のマップアクションを使うので、扉を開けた所で立ち止まって、周囲を確認すること。</div>
+<div class="st">階段は上れないので、南の扉の先へ。※床のマークに注意</div>
 <div class="st">２階・中央の部屋は、以下のような状態になっている（上部分は省略）。</div>
 <table class="masu">
 <tr><td>　<td>×<td>×<td>×<td>←<td>×<td>宝<td>　</td>
@@ -155,29 +168,36 @@
 （○は普通に進める床、×は目の視線上の床、■は柱、矢印は壁または柱の目が向いている方向）<br>
 <div class="ssub">上の方にはどうやっても行けないので、扉の方へ進んで、宝箱を回収して戻ります。<br>
 水ＭＡで上に２マス移動し、そこから、水ＭＡで斜めに扉の方へ進みます（距離がギリギリなので、出来るだけ床の端で水ＭＡを使うこと）。</div>
-<div class="st">２階・中央の部屋から、２部屋分戻る。※床注意</div>
-<div class="st">１階へ下りる階段がある部屋で、南の扉を開けて進む。</div>
-<div class="st">進んだ部屋の階段を下りて、宝箱回収。※床注意</div>
+<div class="st">宝箱を回収したら、階段を上がってきた北東位置の部屋に戻る。※床注意</div>
+<div class="st">そこから、南の扉を開けて、南へ進む。</div>
+<div class="st">南東の部屋の階段を下りて、宝箱回収。※床注意</div>
+<div class="map"><a href="map/map33_1.webp" onclick="return fixmap(this);">ルーフェイ・１階</a></div>
 <div class="st">２階に戻って、西へ行く。</div>
+<div class="map"><a href="map/map33_2.webp" onclick="return fixmap(this);">ルーフェイ・２階</a></div>
 <div class="st">次の部屋では階段を上がらず、先に北へ行く。</div>
-<div class="st">２階・中央（南側）の部屋で、ディスカバリーと宝箱回収。</div>
+<div class="st">２階・中央の部屋で、ディスカバリーと宝箱回収。</div>
 <div class="dis">「壊れた目玉の石像」 (２階中央、宝箱の側にある柱)
 <div class="lchat">「<a href="../chat/lc_main081.html#m096">天族の文明</a>」</div>
 </div>
 <div class="st">１つ前の部屋に戻って、階段を上がり、３階へ。</div>
+<div class="map"><a href="map/map33_3.webp" onclick="return fixmap(this);">ルーフェイ・３階</a></div>
 <div class="st">まずは北に行って、３階・中央の部屋から東に行き、宝箱等回収。</div>
 <div class="ssub">ここから床のマークがないので、目の位置を確認してから進むこと。</div>
 <div class="noru">ビースト (３階中央から東に行った所)</div>
-<div class="st">階段のある部屋に戻って、東の扉を開けて進む。</div>
-<div class="st">４階を進み、中央の部屋へ（床にマークがないので、目に注意）。</div>
-<div class="st">南へ進んだ次の部屋も、目に注意（次の扉へ行く時、１マス前に注意）。</div>
-<div class="st">進んでいくと、今度は３階へ。</div>
-<div class="st">３階の北エリアに出るので、３階・中央の部屋に入って、転送装置で４階へ。</div>
-<div class="st">転送装置で飛んだ所は、目があるので注意。</div>
+<div class="st">南に戻り、南東の方へ進む。</div>
+<div class="st">空洞に出て坂を上がり、４階へ。</div>
+<div class="map"><a href="map/map33_4.webp" onclick="return fixmap(this);">ルーフェイ・４階</a></div>
+<div class="st">４階・西の中央の部屋へ行き、南に進む（床にマークがないので、目に注意）。</div>
+<div class="st">南西の部屋も、目に注意（次の扉へ行く時、１マス前に注意）。</div>
+<div class="st">南東位置から空洞に出て、今度は坂を下がって３階へ。</div>
+<div class="map"><a href="map/map33_3.webp" onclick="return fixmap(this);">ルーフェイ・３階</a></div>
+<div class="st">３階の北エリアに出るので、３階・西の中央の部屋に入って、転送装置で４階へ。</div>
+<div class="map"><a href="map/map33_4.webp" onclick="return fixmap(this);">ルーフェイ・４階</a></div>
+<div class="st">転送装置で飛んだ後、扉の方に進む時も目に注意。</div>
 <div class="lchat">「<a href="../chat/lc_main101.html#m104">憑魔アシュラ</a>」 (大広間前のセーブポイント)</div>
 <div class="st">大広間に入る。</div>
 <div class="btt">アシュラ</div>
-<div class="ssub">地属性が弱点。火と風に耐性あり。<br>
+<div class="ssub">【弱点：地】【耐性：火・風】【種族：獣人・装甲】<br>
 地神依の「駆ける巨魁」（↑ or ↓＋◯、１連携目）なら、地属性と装甲の弱点を突ける。</div>
 <div class="ssub">ミクリオが神依の秘奥義「アクアリムス」を習得。<br>
 ミクリオがシナリオスキル「神依発動時に全員の猛毒を解除」を習得。</div>

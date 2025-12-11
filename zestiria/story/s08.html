@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../def.css" type="text/css">
 <title>ゼスティリア:ストーリー攻略(8)</title>
 <script type="text/javascript" src="../menu.js"></script>
+<script type="text/javascript" src="../map.js"></script>
 </head>
 <body>
 <script>menu_init();</script>
@@ -20,26 +21,30 @@
 <div class="ct">
 <h3><a name="l1"></a>火の試練神殿イグレイン</h3>
 <div class="ssub">敵は風属性に耐性があるため、デゼル以外を戦闘メンバーにしておきます。</div>
+<div class="map"><a href="map/map27_1.webp" onclick="return fixmap(this);">イグレイン・上層</a></div>
 <div class="stn">「状態異常 (4)」 (入口付近)</div>
 <div class="st">まずは北へ行き、２つの燭台に火を灯して、扉を開ける。</div>
 <div class="ssub">燭台の根本のオレンジ色の線に注目。<br>
 線がある方の位置に立って、火を灯す必要がある。４方に線があれば、どこから灯しても良いことになる。<br>
 線の数は、火を灯す順番を示している。| なら１番目、|| なら２番目、||| なら３番目となる。</div>
 <div class="st">扉の先を進み、北西位置の部屋でも火を灯して、開けた扉の先で火を灯す。</div>
-<div class="st">戻って、北の階段を下り、１Ｆへ。</div>
+<div class="st">戻って、北の階段を下りる。</div>
+<div class="map"><a href="map/map27_2.webp" onclick="return fixmap(this);">イグレイン・下層</a></div>
 <div class="ssub">下りた先にある４つの燭台は無視する（現状では、扉を開けても先に進めないため）。</div>
-<div class="st">東→北（宝箱）→南の道を進み、南東の階段を上がって、２Ｆへ。</div>
+<div class="st">東→北（宝箱）→南の道を進み、南東の階段を上がって、上層へ。</div>
+<div class="map"><a href="map/map27_1.webp" onclick="return fixmap(this);">イグレイン・上層</a></div>
 <div class="st">上がった先の２つの燭台を灯して、入口への扉を開けておく。</div>
 <div class="st">扉の先には行かず、西へ行く。</div>
-<div class="noru">パラライズ (２Ｆ南・中央の細長い道の突き当り)</div>
-<div class="st">２Ｆ南西の部屋で４つの燭台に火を灯し、その扉の先で火を灯す。</div>
-<div class="dis">「巨大赤精鉱」 (２Ｆ南西の部屋、扉の先の燭台の右側の壁)
+<div class="noru">パラライズ (上層：南・中央の細長い道の突き当り)</div>
+<div class="st">上層・南西の部屋で４つの燭台に火を灯し、その扉の先で火を灯す。</div>
+<div class="dis">「巨大赤精鉱」 (上層：南西の部屋、扉の先の燭台の右側の壁)
 <div class="lchat">「<a href="../chat/lc_main081.html#m087">天族の力</a>」</div>
 </div>
-<div class="st">東の部屋に戻り、南東の階段を下りて１Ｆへ。</div>
+<div class="st">東の部屋に戻り、南東の階段を下りて下層へ。</div>
+<div class="map"><a href="map/map27_2.webp" onclick="return fixmap(this);">イグレイン・下層</a></div>
 <div class="st">北の方へと戻る。</div>
-<div class="st">１Ｆ北の、４つの燭台に火を灯し、扉の先で宝箱回収。</div>
-<div class="st">また道を戻り、東→南→西で、１Ｆ南の方へ行く。</div>
+<div class="st">下層・北の４つの燭台に火を灯し、扉の先で宝箱回収。</div>
+<div class="st">また道を戻り、東→南→西で、下層・南の方へ行く。</div>
 <div class="st">南西の部屋で宝箱を回収。</div>
 <div class="st">南・中央の２つの燭台に火を灯し、扉を開ける。</div>
 <div class="st">扉の先に進み、風のマップアクションで渡った西の部屋の宝箱を回収。</div>
@@ -47,12 +52,12 @@
 <div class="lchat">「<a href="../chat/lc_main081.html#m086">赤精鉱の理由</a>」 (大広間前のセーブポイント)</div>
 <div class="st">大広間に入ると、戦闘。</div>
 <div class="ssub">フリーラン（L2＋左スティック）で移動して、４つの石碑に触れ、領域を解除する必要があります。<br>
-開始直後は、ロゼが敵に向かっていかないよう、右スティック↓で「専守防衛」にしておきましょう。</div>
+開始直後は、仲間が敵に向かっていかないよう、右スティック↓で「専守防衛」にしておきましょう。</div>
 <div class="btt">サラマンダー＆ブレイズウルフ</div>
-<div class="ssub">水属性が弱点。地と風に耐性あり。</div>
+<div class="ssub">【弱点：水】【耐性：地・風】【種族：装甲・竜】</div>
 <div class="ssub">ライラが神依の秘奥義「フランブレイブ」を習得。<br>
 ライラがシナリオスキル「神依発動時に全員の火傷を解除」を習得。</div>
-<div class="ssub">ちなみに、ライラとエクセオの話の裏でしゃべっている、スレイとミクリオの会話の内容は、以下の通り。<br>
+<div class="ssub">ちなみに、ライラとエクセオの話の裏でしゃべっている、スレイとミクリオの会話の内容は以下の通り。<br>
 <a href="#" onclick="return showhide(this,'memo1')">▼開く</a><br>
 <div id="memo1" style="display:none">スレイ「かめにん天族は、亀から天族になったのかな」<br>
 ミクリオ「だとするとノルミン天族は、ノルミンから天族になったということになるな」<br>
@@ -70,7 +75,7 @@
 <div class="st">出口付近にいるスランジに近付く。</div>
 <div class="lchat">「<a href="../chat/lc_main081.html#m088">ペンドラゴは今</a>」 (ゴドジン宿屋のセーブポイント)<br>
 「<a href="../chat/lc_talk01.html#t16">わんわんのニャン</a>」 (任意のセーブポイント)</div>
-<div class="ssub">次はペンドラゴに戻ることになるが、まずは地のマップアクションで進めるところを探索しておく。<br>
+<div class="ssub">次はペンドラゴに戻ることになりますが、まずは、地のマップアクションで進めるようになった所を探索しておくと良いです。<br>
 イデル鍾洞 → (凱旋草海) → 緑青林マロリー → (パルバレイ牧耕地) → ガフェリス遺跡の順で回ると良い。</div>
 <div class="sem">なお、カンブリア地底洞では、ヘルダルフが領域を展開していて、まともに進めないので、ペンドラゴ方面に戻る場合は、バイロブクリフ崖道の東から、凱旋草海へ抜けて、パルバレイ牧耕地へ行くこと。</div>
 </div>
@@ -78,35 +83,44 @@
 <div class="ct">
 <h3>バイロブクリフ崖道</h3>
 <div class="ssub">まずは、イデル鍾洞を探索しておく。</div>
+<div class="map"><a href="map/map25.webp" onclick="return fixmap(this);">バイロブクリフ崖道</a></div>
 <div class="st">ゴドジンから中央部分へ進み、丘から北（左側）の道を行くと、イデル鍾洞へ。</div>
 
 <h3><a name="l3"></a>イデル鍾洞</h3>
-<div class="st">西と南、どちらの道を先に進んでも良いので、両方の道で宝箱を回収する。</div>
+<div class="map"><a href="map/map28_1.webp" onclick="return fixmap(this);">イデル鍾洞・東部</a></div>
+<div class="st">西と南、どちらの道を先に進んでも良いので、１周して宝箱を回収する。</div>
 <div class="ssub">地のマップアクションで岩を壊すと、ショートカットできるようになるため、目に付いた岩は壊しておくと良い。<br>
 イデル鍾洞は、後のサブイベントでも来ることになる。</div>
 <div class="noru">フォレスト (東部：南西の、西部へ行く道の手前の北側)</div>
 <div class="st">南西にある、西部への道を進み、イデル鍾洞・西部へ。</div>
-<div class="st">西部は、大きな広間の東方向の道を行くと良い。</div>
+<div class="map"><a href="map/map28_2.webp" onclick="return fixmap(this);">イデル鍾洞・西部</a></div>
+<div class="st">まず、大きな広間から南東方向の道を行くと良い。</div>
 <div class="dis">「ヘリクタイト」 (西部：一番南東の位置の、ねじくれた岩)
 <div class="lchat">「<a href="../chat/lc_main061.html#m080">ヘリクタイト</a>」</div>
 </div>
-<div class="st">セーブポイントから先に行った所に岩があるので、それを壊して、風のマップアクションで進み、大きな広間に戻る。</div>
+<div class="st">北西方向に進む。</div>
+<div class="st">セーブポイントから先の突き当りに岩があるので、それを壊して、風のマップアクションで進み、大きな広間に戻る。</div>
 <div class="st">東部へ戻って、イデル鍾洞から出る。</div>
+<div class="map"><a href="map/map28_1.webp" onclick="return fixmap(this);">イデル鍾洞・東部</a></div>
 </div>
 
 <div class="ct">
 <h3><a name="l4"></a>バイロブクリフ崖道</h3>
-<div class="st">凱旋草海方面に戻るため、丘のある所へ行き、北（右側）の道を行く。</div>
+<div class="map"><a href="map/map25.webp" onclick="return fixmap(this);">バイロブクリフ崖道</a></div>
+<div class="st">凱旋草海に戻るため、丘のある所へ行き、北（右側）の道を行く。</div>
 
 <h3>凱旋草海</h3>
+<div class="map"><a href="map/map19.webp" onclick="return fixmap(this);">凱旋草海</a></div>
 <div class="st">凱旋草海の南に出るので、北へ行き、緑青林マロリーへ。</div>
 <div class="sem">風の骨のアジトイベントで、ザビーダバージョンのチャットを見たい場合は、行かないこと。</div>
 <div class="hyoma">ついでに、付近の変異憑魔を倒しておくといい。<br>
 ベヒーモス [Lv34] (凱旋草海：穢れの坩堝から少し南)</div>
 
 <h3>緑青林マロリー</h3>
+<div class="map"><a href="map/map20_1.webp" onclick="return fixmap(this);">マロリー・西部</a></div>
 <div class="st">西部の西側で、岩を壊しつつ宝箱を回収。</div>
 <div class="st">北東の道を行き、東部へ。</div>
+<div class="map"><a href="map/map20_2.webp" onclick="return fixmap(this);">マロリー・東部</a></div>
 <div class="hyoma">クジャクオウ [Lv34] (東部：セーブポイントの先)<br>
 後のサブイベントで、クジャクオウが落とす「孔雀の羽」が必要になるので、倒しておくと良い。</div>
 <div class="stn">「GRADEとは (4)」 (変異憑魔の先)</div>
@@ -120,20 +134,25 @@
 
 <div class="ct">
 <h3><a name="l5"></a>凱旋草海</h3>
+<div class="map"><a href="map/map19.webp" onclick="return fixmap(this);">凱旋草海</a></div>
 <div class="ssub">パルバレイ牧耕地でガフェリス遺跡を探索してから、ペンドラゴに戻る。</div>
 <div class="st">北西の道を行き、パルバレイ牧耕地へ。</div>
 
 <h3>パルバレイ牧耕地</h3>
+<div class="map"><a href="map/map21.webp" onclick="return fixmap(this);">パルバレイ牧耕地</a></div>
 <div class="st">北のガフェリス遺跡へ。</div>
 <div class="hyoma">ついでに、付近の変異憑魔を倒しておくといい。<br>
 デンジャラススメル [Lv35] (パルバレイ牧耕地：穢れの坩堝から少し南西の丘)</div>
 
 <h3><a name="l6"></a>ガフェリス遺跡</h3>
-<div class="st">入口から左側の道を行き、地下２階へ。</div>
+<div class="map"><a href="map/map22_1.webp" onclick="return fixmap(this);">ガフェリス遺跡・地下１階</a></div>
+<div class="st">入口から左側（南）の道を行き、地下２階へ。</div>
+<div class="map"><a href="map/map22_2.webp" onclick="return fixmap(this);">ガフェリス遺跡・地下２階</a></div>
 <div class="st">東の方に進むと、南東位置あたりに地のマップアクションで開く道があるので、地下１階へ上がる。</div>
 <div class="st">進んだ先の突き当り付近で、地のマップアクションで道を開き、地下２階へ。</div>
 <div class="noru">ミラージュ (地下２階：中央の横長の道)</div>
 <div class="st">地下３階へ。</div>
+<div class="map"><a href="map/map22_3.webp" onclick="return fixmap(this);">ガフェリス遺跡・地下３階</a></div>
 <div class="hyoma">セルケト [Lv36] (地下３階：最深部)</div>
 <div class="st">遺跡から出て、南のペンドラゴへ。</div>
 </div>
@@ -150,7 +169,7 @@
 <div class="ct">
 <h3><a name="l8"></a>ペンドラゴ教会神殿</h3>
 <div class="st">扉の先に進むとイベント。</div>
-<div class="ssub">ちなみに、裏でしゃべっているデゼル達の会話の内容は、以下の通り。<br>
+<div class="ssub">ちなみに、裏でしゃべっているデゼル達の会話の内容は以下の通り。<br>
 <a href="#" onclick="return showhide(this,'memo2')">▼開く</a><br>
 <div id="memo2" style="display:none">ロゼ「デゼル……もしかしてウケてる？」<br>
 エドナ「まさかダジャレ好きとか？」<br>
@@ -162,6 +181,7 @@
 <div class="dis">「秘力の碑文」
 <div class="lchat">「<a href="../chat/lc_main081.html#m089">秘力の碑文</a>」</div>
 </div>
+<div class="map"><a href="map/map29_1.webp" onclick="return fixmap(this);">ペンドラゴ教会神殿・１</a></div>
 <div class="st">進んだ先の壁を調べる。赤の瞳石・トヴォを入手。</div>
 <div class="lchat">「<a href="../chat/lc_main161.html#m167">大地の記憶を見て７</a>」 (固定)</div>
 <div class="st">もう一度壁を調べて、「小さな赤の石版」を入手。</div>
@@ -169,26 +189,30 @@
 <div class="st">まず、部屋の右側の赤の扉を開けて、北西方向へ。</div>
 <div class="stn">「３つの術技 (4)」 (扉を開けてまっすぐ行った突き当り)</div>
 <div class="st">北西方向へ進み、赤の扉を２つ開けて、マップ移動。</div>
-<div class="st">中央方向に進み、部屋で「小さな黄の石版」を入手。</div>
+<div class="map"><a href="map/map29_2.webp" onclick="return fixmap(this);">ペンドラゴ教会神殿・２</a></div>
+<div class="st">南・中央に進み、部屋で「小さな黄の石版」を入手。</div>
 <div class="st">その部屋の黄の扉を開けて、北東方向へ進む。</div>
 <div class="st">一番北東にある部屋で、「小さな青の石版」を入手。</div>
-<div class="st">そこから戻って、青の扉の部屋でノルミン回収。</div>
-<div class="noru">バーニング (黄の石版を入手した部屋から南西位置にある、突き当りの部屋)</div>
-<div class="st">青の石版を入手した部屋で、青の扉を開ける。</div>
-<div class="st">北西方向の青の扉を開けて進み、中央位置の青の扉を開けて、宝箱回収。</div>
-<div class="st">そこから南西方向に進み、奥の一つ手間の黄の扉を開けて、宝箱回収。</div>
-<div class="st">一番奥の青の扉を開けて、部屋で「小さな緑の石版」を入手。</div>
+<div class="st">そこから南に戻って、青の扉の部屋でノルミン回収。</div>
+<div class="noru">バーニング (黄の石版を入手した部屋から南東位置にある、突き当りの部屋)</div>
+<div class="st">青の石版を入手した部屋に戻り、青の扉を開けてマップ移動。</div>
+<div class="map"><a href="map/map29_1.webp" onclick="return fixmap(this);">ペンドラゴ教会神殿・１</a></div>
+<div class="st">北の青の扉を開けて進み、中央位置の青の扉を開けて、宝箱回収。</div>
+<div class="st">そこから北西方向に進み、奥の一つ手間の黄の扉を開けて、宝箱回収。</div>
+<div class="st">北西・一番奥の青の扉を開けて、部屋で「小さな緑の石版」を入手。</div>
+<div class="map"><a href="map/map29_2.webp" onclick="return fixmap(this);">ペンドラゴ教会神殿・２</a></div>
 <div class="st">緑の扉を開けて、道なりに進み、中央位置のセーブポイントのある所へ。</div>
 <div class="lchat">「<a href="../chat/lc_main081.html#m091">スレイの思い、ロゼの思い</a>」 (大広間前のセーブポイント)</div>
 <div class="st">４つの石版が揃っているので、大広間への扉が開く。</div>
 <div class="btt">メデューサ</div>
-<div class="ssub">風属性が弱点。地と水に耐性あり。</div>
+<div class="ssub">【弱点：風】【耐性：地・水】【種族：無足・妖魔】</div>
 <div class="dis">「マオテラスの紋章」 (大広間の奥)
 <div class="lchat">「<a href="../chat/lc_main081.html#m090">マオテラスの紋章</a>」</div>
 </div>
 <div class="lchat">「<a href="../chat/lc_sub01.html#s06">犠牲の石像</a>」 (大広間・ボリスの石像付近)<br>
 「<a href="../chat/lc_main081.html#m092">消えたマオテラス</a>」 (大広間前のセーブポイント)</div>
 <div class="st">帰る途中、入口から東方向の突き当りの部屋で、宝箱回収。</div>
+<div class="map"><a href="map/map29_1.webp" onclick="return fixmap(this);">ペンドラゴ教会神殿・１</a></div>
 <div class="st">ペンドラゴに戻る。</div>
 </div>
 
@@ -203,7 +227,7 @@
 「<a href="../chat/lc_talk01.html#t20">一石何鳥？</a>」 (ペンドラゴ宿屋に泊まる)<br>
 「<a href="../chat/lc_talk01.html#t18">復讐者デゼル</a>」 (任意の宿屋に泊まる)<br>
 「<a href="../chat/lc_talk01.html#t19">風の決意</a>」 (任意の宿屋に泊まる [確率])</div>
-<div class="ssub">この時点でサブイベントが大量に発生するため、まずはペンドラゴ周辺のサブイベントを進める。</div>
+<div class="ssub">この時点でサブイベントが大量に発生するため、まずはペンドラゴ周辺のサブイベントを進めます。</div>
 </div>
 
 <div class="navi"><a href="s07.html">&lt; Prev</a> | <a href="index.html">Back</a> | <a href="s09.html">Next &gt;</a></div>

@@ -17,6 +17,7 @@ h5{font-size:120%;line-height:100%;margin:1.8em 0 1.5em 0;} h5::before{content:"
 ul,ol{margin-left:1.5em;}
 li{line-height:200%;}
 em{font-style:normal;color:red;}
+img{vertical-align:middle}
 
 table{border-collapse:collapse;}
 td,th{padding:3px 4px;line-height:160%;}
@@ -28,7 +29,7 @@ table.masu td{padding:3px;line-height:100%;text-align:center;}
 h3{font-size:120%;margin:2em 0 1.5em 0;color:#7E48C7;background-color:#EADBFF;border:double #7E48C7;border-width:3px 0;padding:6px 8px;line-height:100%;}
 h3:first-child{margin-top:0}
 .ssub, .sem, .schat, .lchat, .stn, .dis, .noru, .doseki, .hyoma{padding:4px 8px;margin:1em 0;border:solid 1px;line-height:180%;}
-.schat::before, .lchat::before, .stn::before, .dis::before, .noru::before, .doseki::before, .hyoma::before {
+.schat::before, .lchat::before, .stn::before, .dis::before, .noru::before, .doseki::before, .hyoma::before{
  color:white;padding:2px 5px;position:relative;top:-5px;left:-8px;}
 
 .st{color:#003BB0;font-weight:bold;margin:0.6em 0;border-left:solid 4px #003BB0;padding-left:6px;}
@@ -43,6 +44,7 @@ h3:first-child{margin-top:0}
 .noru{color:#0B658C;border-color:#0B658C;} .noru::before{content:"ノルミン";background-color:#0B658C;}
 .doseki{color:#7D299E;border-color:#9631BD;} .doseki::before{content:"瞳石イベント";background-color:#9631BD;}
 .hyoma{color:#B84100;border-color:#CC4800;} .hyoma::before{content:"変異憑魔";background-color:#CC4800;}
+.map{padding:3px 8px;margin:1em 0;} .map::before{content:"マップ";background-color:#AABA00;color:white;padding:2px 5px;position:relative;top:0;left:-8px;}
 
 .tblc{border-collapse:separate;border-spacing:1px;}
 table.tblc td,table.tblc th{padding:1px 4px;}
@@ -60,13 +62,18 @@ table.tblc th{font-size:85%;color:white;font-weight:normal;text-align:center;whi
 .cetc{background-color:#666}
 .edat{margin-bottom:0.6em}
 
-#jmenu_icon,#jmenu{position:fixed;right:0;top:0;background-color:black;color:white;padding:6px 10px 6px 6px;font-size:1.5rem;}
+#jmenu_icon,#jmenu{z-index:9998;position:fixed;right:0;top:0;background-color:black;color:white;padding:6px 10px 6px 6px;font-size:1.5rem;}
 #jmenu_icon{cursor:pointer}
 #jmenu{line-height:150%}
 #jmenu hr{height:0;margin:0.4em 0;border-bottom:solid 1px white;}
 #jmenu a{text-decoration:none;display:block;}
 #jmenu a:link,#jmenu a:visited{color:white;}
 #jmenu a:hover{background-color:#ccc;color:black;}
+
+#map_view{z-index:9997;position:fixed;right:0;bottom:0;line-height:100%;}
+#map_close{font-weight:bold;background-color:#555;color:white;cursor:pointer;padding:0.2em 6px;position:absolute;right:0;top:-1.4em;}
+#map_view img{max-width:100%;height:auto;border:solid 2px black !important;cursor:pointer;}
+#map_loading{background-color:#555;color:white;padding:5px 8px;}
 
 @media screen and (min-width:900px){
 #tbox{width:800px;}

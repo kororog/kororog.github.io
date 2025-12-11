@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../def.css" type="text/css">
 <title>ゼスティリア:ストーリー攻略(2)</title>
 <script type="text/javascript" src="../menu.js"></script>
+<script type="text/javascript" src="../map.js"></script>
 </head>
 <body>
 <script>menu_init();</script>
@@ -23,8 +24,8 @@
 <div class="st">ライラの後をついていく。</div>
 <div class="schat">ライラが外縁水道区に入った後、レディレイクから出ようとする：<a href="#" onclick="return word(this,'ミクリオ「まずはライラの話を聞かないとだろ？」<br>スレイ「そうだな、待たせちゃ悪いし」')">★</a></div>
 <div class="st">外縁水道区のライラに近付くと、イベント。</div>
+<div class="schat">イベント後、宿屋に行かず、レディレイクから出ようとする：<a href="#" onclick="return word(this,'スレイ「腹減った〜。まずは宿に戻ろう」')">★</a></div>
 <div class="st">中央区の宿屋に戻り、宿屋の主人と話す。</div>
-<div class="schat">宿屋に入る前に、レディレイクから出ようとする：<a href="#" onclick="return word(this,'スレイ「腹減った〜。まずは宿に戻ろう」')">★</a></div>
 <div class="ssub">スレイの衣装「導師のいでたち」を入手。</div>
 <div class="lchat">「<a href="../chat/lc_main001.html#m014">寝込んでいた間に</a>」 (レディレイク宿屋のセーブポイント)<br>
 「<a href="../chat/lc_sys01.html#y01">装備品を買おう</a>」 (任意のセーブポイント)<br>
@@ -33,18 +34,20 @@
 <div class="st">レディレイクの街を改めて回ることに。</div>
 <div class="lchat">「<a href="../chat/lc_main001.html#m016">故郷イズチ</a>」 (レディレイク宿屋に泊まる)</div>
 <div class="schat">レディレイク出口に近付く：<a href="#" onclick="return word(this,'ミクリオ「スレイ。ちょっと考えをまとめないか」<br>ライラ「そうですわね。ミクリオさんと、ちゃんと相談してみては？」')">★</a></div>
+<div class="st">聖堂内に入れるようになっている。</div>
+<div class="map"><a href="map/map05_5.webp" onclick="return fixmap(this);">湖の乙女の聖堂</a></div>
 <div class="st">「王家のナイフ」または「ジイジのキセル」を渡していた場合、聖堂前にいるロゼ達と話すとイベント。</div>
 <div class="ssub">「王家のナイフ」を渡していた場合、３つの依頼から１つを選択して受けると、ナイフを返してもらえます。<br>
 この後使うことになるので、二度手間になりたくない場合は、ここで取り戻しておくこと。<br>
 ※ナイフを所持していない時のイベントを見たい場合は、ヴィヴィア水道遺跡へ行った後にします。<br>
 <br>
-「武器屋に荷を卸すのを手伝う」<br>
-「水路の作業員に作業命令書を届ける」<br>
-「宿屋の食事メニューを調べて教える」</div>
+「武器屋に荷を卸すのを手伝う」→荷物運び<br>
+「水路の作業員に作業命令書を届ける」→届けもの<br>
+「宿屋の食事メニューを調べて教える」→記憶</div>
 <div class="ssub">「ジイジのキセル」を渡していた場合は、「テンガロンハット」をもらえます。<br>
-※ここではまだ「ジイジのキセル」を取り戻せない。<br>
+<em>※ここではまだ、「ジイジのキセル」は取り戻せません。</em><br>
 ※ここで話しかけなかった場合は、のちにティンタジェル遺跡群で入手できます。<br>
-　その場合、追加のショートチャットを見ることができる。</div>
+　その場合、追加のショートチャットを見ることができます。</div>
 <div class="st">外縁水道区へ行く。</div>
 <div class="ssub"><b>サブイベント：</b> かめにんから「冒険の地図・湖の都」を購入する。<br>
 終盤のサブイベントに関係してくるため、各地の地図はすべて購入しておくこと。</div>
@@ -56,13 +59,15 @@
 
 <div class="ct">
 <h3><a name="l2"></a>ヴィヴィア水道遺跡</h3>
+<div class="map"><a href="map/map06_1.webp" onclick="return fixmap(this);">ヴィヴィア水道遺跡</a></div>
 <div class="st">少し進むと、戦闘。</div>
 <div class="btt">スライムグラット＆スライム</div>
-<div class="ssub">「銅の鍵」を入手。銅の宝箱を開けられるようになる。</div>
-<div class="st">ミクリオが離脱。</div>
+<div class="ssub">「銅の鍵」を入手。<br>銅の宝箱を開けられるようになる。</div>
+<div class="st">戦闘後、ミクリオが離脱。</div>
 <div class="st">進んだ先にある扉を調べる。</div>
 <div class="st">「王家のナイフ」を使って、扉を開ける。</div>
-<div class="ssub">「王家のナイフ」を所持していない場合は、イベントシーンが追加される。</div>
+<div class="ssub">この時、「王家のナイフ」を所持していない場合は、イベントシーンが追加される。<br>
+大聖堂前にいるロゼ達と話して、ナイフを取り戻すこと。</div>
 <div class="stn">「難易度について (3)」 (扉を開けたすぐ左)</div>
 <div class="st">進んだ先の突き当たりにある、聖剣の祭壇に近付く。</div>
 <div class="st">ライラに話しかける。</div>
@@ -106,26 +111,29 @@
 
 <div class="ct">
 <h3><a name="l4"></a>レイクピロー高地</h3>
+<div class="map"><a href="map/map04_2.webp" onclick="return fixmap(this);">レイクピロー高地・北</a></div>
 <div class="lchat">「<a href="../chat/lc_main001.html#m018">穢れた世界</a>」 (レディレイク入口のセーブポイント)</div>
 <div class="st">レディレイクを出て、右側の橋を渡り、回り込む形で北西方向に進む。</div>
 <div class="stn">「属性とステータス」 (北の川の近く)</div>
 <div class="hyoma">マーナガルム [Lv19] (川を渡った少し先の、紫色の狼)<br>
 現時点では勝てない。<br>
-※遭遇時のショートチャットにはエドナが参加しているので、エドナ加入後に挑戦するとよい。</div>
-<div class="ssub">フィールドやダンジョンにいる大きな憑魔は<b>変異憑魔</b>と呼び、変異憑魔を倒すと、全員の最大ＨＰが上がる「〜の宝珠」を入手できます。<br>
-最大ＨＰはレベルアップでは上がらないので、各地にいる変異憑魔を倒すことは、攻略上、重要な要素になります。<br>
+※遭遇時のショートチャットには、エドナが参加しているため、エドナ加入後に挑戦するといい。</div>
+<div class="ssub">フィールドやダンジョンにいる、大きめの特殊な憑魔は、「<b>変異憑魔</b>」と呼ばれます。<br>
+変異憑魔を倒すと、全員の最大ＨＰが上がる「〜の宝珠」を入手できます。<br>
+最大ＨＰはレベルアップでは上がらないので、倒せるレベルになったら、変異憑魔は積極的に倒しておきましょう。<br>
 <br>
-見つけたら出来るだけ倒しておくべきですが、序盤〜中盤の変異憑魔はレベルが高く、勝てない可能性が高いので、キャラのレベルが敵のレベルと同じくらいになったら、挑戦してみると良いでしょう。<br>
+ただし、序盤〜中盤の変異憑魔はレベルが高く、勝てない可能性が高いので、出現場所だけ覚えておいてスルーします。<br>
 （ここで記載しているレベルは、戦闘ランク「ノーマル」時の値）<br>
 <br>
 なお、変異憑魔との戦闘ではリトライが出来ないため、負けるとゲームオーバーになります。<br>
-戦う場合は、直前にセーブしておいてください。</em></div>
-<div class="st">川を渡った先の、突き当り付近に、ガラハド遺跡がある。</div>
+戦う場合は、必ず直前にセーブしておきましょう。</em></div>
+<div class="st">川を渡った先の突き当り付近にある、ガラハド遺跡へ。</div>
 </div>
 
 <div class="ct">
 <h3><a name="l5"></a>ガラハド遺跡</h3>
-<div class="ssub">黒い壁は、火のマップアクションで除去できる。</div>
+<div class="map"><a href="map/map07_1.webp" onclick="return fixmap(this);">ガラハド遺跡・地下１階</a></div>
+<div class="ssub">黒い壁は、火のマップアクションで除去できます。</div>
 <div class="ssub">ここに出現する「<a href="../enemy/e01.html#e014">ヒル</a>」の初回遭遇ショートチャットは、ミクリオがパーティーにいない場合、ミクリオのセリフが再生されません。<br>
 フルバージョンで聞きたい場合は、ミクリオが復帰してから戦うこと。</div>
 <div class="stn">「弱点と耐性 (3)」 (入口のすぐ正面)</div>
@@ -133,13 +141,14 @@
 <div class="stn">「ターゲット確認 (3)」 (入口から右側の道を行き、左側の隅)</div>
 <div class="st">戻って、入口から左の道を行く。</div>
 <div class="st">部屋にある弓に近付く。</div>
-<div class="st">イベント後、戻ってディスカバリー。</div>
+<div class="st">イベント後、弓の方に戻ってディスカバリーを見る。</div>
 <div class="dis">「弓の祭壇」
 <div class="lchat">「<a href="../chat/lc_main001.html#m020">弓の台座</a>」</div>
 </div>
 <div class="stn">「アラウンドステップ (3)」 (弓の祭壇の先の部屋の右隅)</div>
 <div class="st">北と東の２つの道があるが、先に北の道を行って、地下２階の宝箱を回収。</div>
-<div class="st">戻って、東の道を行き、地下２階へ。</div>
+<div class="map"><a href="map/map07_2.webp" onclick="return fixmap(this);">ガラハド遺跡・地下２階</a></div>
+<div class="st">地下１階に戻って、東の道を行き、地下２階へ。</div>
 <div class="st">セーブポイントの先で、戦闘。</div>
 <div class="btt">オオムカデ</div>
 <div class="st">ミクリオが復帰。</div>
@@ -180,10 +189,13 @@
 <div class="st">レディレイクを出て、左側の橋を渡り、進んでいく。</div>
 
 <h3><a name="l7"></a>フォルクエン丘陵</h3>
+<div class="map"><a href="map/map08_1.webp" onclick="return fixmap(this);">フォルクエン丘陵・レディレイク側</a></div>
 <div class="stn">「特技 (3)」 (フォルクエン丘陵に入ったところから、少し進んだ所)</div>
 <div class="st">兵士と話す。</div>
 <div class="btt">ウロボロス</div>
-<div class="ssub">初見では、最初に苦戦するボスになると思うので、敵の攻撃を見極めながら戦いましょう。<br>
+<div class="ssub">【耐性：地・風】【種族：無足・竜】<br>
+<br>
+初見では、最初に苦戦するボスになると思うので、敵の攻撃を見極めながら戦いましょう。<br>
 回復アイテムも準備しておくこと。</div>
 <div class="st">ウーノが地の主になってくれることに。</div>
 <div class="ssub">すでにブルーノ司祭と話しているかどうかで、最後のセリフが少し変わります。</div>

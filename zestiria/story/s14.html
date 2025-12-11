@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../def.css" type="text/css">
 <title>ゼスティリア:ストーリー攻略(14)</title>
 <script type="text/javascript" src="../menu.js"></script>
+<script type="text/javascript" src="../map.js"></script>
 </head>
 <body>
 <script>menu_init();</script>
@@ -19,20 +20,22 @@
 
 <div class="ct">
 <h3><a name="l1"></a>グレイブガント盆地</h3>
-<div class="sem">これ以降は、しばらくの間、ラストンベルより先のエリアには行けなくなるので、用がある場合は先に済ませておきましょう。</div>
-<div class="st">どちら側から入ってもいいので、グレイブガント盆地に入ると、イベント。</div>
+<div class="sem">グレイブガント盆地でのイベント以降は、しばらくの間、ラストンベル〜ローグリンのエリアには行けなくなるので、用がある場合は先に済ませておきましょう。</div>
+<div class="st">どちら側から入ってもいいので、グレイブガント盆地に入るとイベント。</div>
+<div class="map"><a href="map/map14_1.webp" onclick="return fixmap(this);">グレイブガント盆地</a></div>
 <div class="schat">盆地から出ようとする：<a href="#" onclick="return word(this,'スレイ「あのドラゴンを止めないと、両軍とも……」<br>ロゼ「うん、あたしたちがやんなきゃ……。行こう、スレイ！」')">★</a></div>
 <div class="st">盆地を進んで中央へ行き、ドラゴンに近付く。</div>
 <div class="btt">ティアマット</div>
-<div class="ssub">無属性が弱点、火・地・水に耐性あり。種族は竜。<br>
+<div class="ssub">【弱点：無】【耐性：火・地・水】【種族：竜】<br>
 風神依で、無属性の奥義、「迅の裂刀」（◯、１連携目）や「薙ぎて斬刀」（← or →＋◯、１連携目）から連携して攻撃するといいでしょう。<br>
 <br>
 少しＨＰを減らすと、イベントに移行。<br>
 さらにＨＰを減らすと、またイベントに移行。<br>
 三度目で本番です。</div>
-<div class="ssub">ちなみに、ティアマットから入手できる「輪廻の龍珠」は、ドラゴンが使う再生術を無効化します。<br>
-アイテムの説明を見ないと気付きにくいですが、これがあると、アイゼンを倒せるようになります。</div>
+<div class="ssub">ティアマットを倒すと入手する「輪廻の龍珠」は、ドラゴンが使う再生術を無効化します。<br>
+アイテムの説明を見ないと気付きにくいですが、これがあるとアイゼンを倒せるようになります。</div>
 <h3>ヴァーグラン森林</h3>
+<div class="map"><a href="map/map15.webp" onclick="return fixmap(this);">ヴァーグラン森林</a></div>
 <div class="schat">ティンタジェル遺跡群に行かず、盆地などに入ろうとする：<a href="#" onclick="return word(this,'ロゼ「元アジトに行って、一休みしよ。さすがに限界かも」<br>スレイ「うん、すげー疲れたもんな……」')">★</a></div>
 <div class="st">ティンタジェル遺跡群に入る。</div>
 <div class="lchat">「<a href="../chat/lc_main141.html#m143">人の世の縮図</a>」 (任意のセーブポイント)</div>
@@ -71,12 +74,13 @@
 <h3>龍魔人</h3>
 <div class="st">グレイブガント盆地の中央から少し南あたりにいる龍魔人と戦う。</div>
 <div class="hyoma">龍魔人 [Lv62]<br>
-無属性以外に耐性あり。種族は装甲/竜。<br>
+【耐性：火・地・水・風】【種族：装甲・竜】<br>
 <br>
-火神依なら「紅の障壁」（← or →＋◯、２連携目）で装甲、<br>
-水神依なら「蒼穹の十二連」（◯、３連携目）で装甲、「散りし六星」（← or →＋◯、３連携目）で竜、<br>
-地神依なら「駆ける巨魁」（↑ or ↓＋◯、１連携目）で装甲、「土流の碑文」（← or →＋◯、３連携目）で竜、<br>
-風神依なら◯の連携で、「竜の裂華」（◯、２連携目）で竜属性の弱点を突くといい（１連携目は無属性）。</div>
+各神依で種族弱点を突く場合は、以下の通り。<br>
+火神依：「紅の障壁」（← or →＋◯、２連携目）で装甲。<br>
+水神依：「蒼穹の十二連」（◯、３連携目）で装甲、「散りし六星」（← or →＋◯、３連携目）で竜。<br>
+地神依：「駆ける巨魁」（↑ or ↓＋◯、１連携目）で装甲、「土流の碑文」（← or →＋◯、３連携目）で竜。<br>
+風神依：◯の連携で、「竜の裂華」（◯、２連携目）で竜属性の弱点を突くといい（１連携目は無属性）。</div>
 <div class="lchat">「<a href="../chat/lc_sub61.html#s80">憑魔・龍魔人</a>」 (倒すと自動再生)</div>
 <div class="ssub">戦闘後、盆地の南西の丘に、浄化された女性天族が出現します。<br>
 ティアマットは、アイフリードの狩り場にいた２人の天族の、男性の方が憑魔化した姿。<br>
@@ -95,7 +99,9 @@
 <div class="st">マーリンド：中央付近にいる男性に話しかける。</div>
 <div class="st">ダムノニア美術館にいるロマーノに近付く。</div>
 <div class="btt">オークコング</div>
-<div class="ssub">風属性が弱点、無・火・地に耐性あり。種族は獣人。<br>
+<div class="ssub">【弱点：風】【耐性：無・火・地】【種族：獣人】<br>
+<br>
+風神依は無属性の奥義があるので注意。<br>
 獣人の弱点を突くなら、水神依で「分けし天滝」（← or →＋◯、１連携目）から連携しましょう。<br>
 <br>
 攻撃力が高く、天響術も使ってくる上に、２体います。<br>
@@ -113,12 +119,13 @@
 <div class="ssub">チャット「ドラゴンスレイヤーの役目」を見ていること。<br>
 レイフォルクには、新しい敵が出現するようになっています。<br>
 ※アイゼンは Lv80 の強敵なので、後回しにしてもよい。</div>
+<div class="map"><a href="map/map10_1.webp" onclick="return fixmap(this);">霊峰レイフォルク・ふもと</a> | <a href="map/map10_2.webp" onclick="return fixmap(this);">頂上</a></div>
 <div class="st">レイフォルク：道の途中でイベント。</div>
 <div class="ssub">エドナとザビーダが、頂上に着くまでの間、離脱する。</div>
 <div class="schat">二人の離脱後、レイフォルクから出ようとする：<a href="#" onclick="return word(this,'スレイ「……オレが決着をつけなくちゃいけない」')">★</a></div>
 <div class="st">頂上でアイゼンと戦う。</div>
 <div class="btt">アイゼン</div>
-<div class="ssub">無・火・地に耐性あり。種族は竜。<br>
+<div class="ssub">【耐性：無・火・地】【種族：竜】<br>
 <br>
 長期戦になるので、回復アイテム（パナシーアボトルも）を十分に用意しておくこと。<br>
 水神依で、遠距離から攻撃するといい。<br>
@@ -133,57 +140,71 @@
 <div class="lchat">「<a href="../chat/lc_sub01.html#s05">エドナの言いたいこと</a>」 (自動再生)</div>
 <div class="st">宿屋でチャットを見る。</div>
 <div class="lchat">「<a href="../chat/lc_sub41.html#s60">天族たちの思い</a>」 (任意の宿屋に泊まる)</div>
-<div class="st">チャット「天族たちの思い」を見た後、レイフォルク山頂のアイゼンの墓を調べると、イベント。</div>
+<div class="st">チャット「天族たちの思い」を見た後、レイフォルク山頂のアイゼンの墓を調べるとイベント。</div>
 <div class="ssub">エドナが秘奥義「シューティングスター」を習得。</div>
 </div>
 
 <div class="ct">
 <h3><a name="l4"></a>グレイブガント盆地</h3>
+<div class="map"><a href="map/map14_1.webp" onclick="return fixmap(this);">グレイブガント盆地</a></div>
 <div class="ssub">グレイブガント盆地が自由に探索できるようになっているので、南東にある遺構窟メルシオへ。</div>
 <div class="dis">「自然に帰った馬」 (遺構窟メルシオの手前)
 <div class="lchat">「<a href="../chat/lc_main141.html#m146">戦場跡にて</a>」</div>
 </div>
 
 <h3><a name="l5"></a>遺構窟メルシオ</h3>
+<div class="map"><a href="map/map44_1.webp" onclick="return fixmap(this);">遺構窟メルシオ・地下１階</a></div>
 <div class="st">地下１階から地下２階へ。</div>
+<div class="map"><a href="map/map44_2.webp" onclick="return fixmap(this);">地下２階</a></div>
 <div class="st">下りたら、まっすぐ北に火のマップアクションを使って進み、地下３階で宝箱回収。</div>
+<div class="map"><a href="map/map44_3.webp" onclick="return fixmap(this);">地下３階</a></div>
 <div class="st">地下２階に戻ったら中央へ進み、東の道へ。</div>
+<div class="map"><a href="map/map44_2.webp" onclick="return fixmap(this);">地下２階</a></div>
 <div class="dis">「残された商人の荷物」 (地下２階：東の部屋)
 <div class="lchat">「<a href="../chat/lc_main141.html#m145">憑魔の巣</a>」</div>
 </div>
 <div class="st">東の部屋から地下３階に下りて、宝箱回収。</div>
+<div class="map"><a href="map/map44_3.webp" onclick="return fixmap(this);">地下３階</a></div>
 <div class="st">地下２階に戻って、中央から北の道を行き、地下３階に下りる。</div>
+<div class="map"><a href="map/map44_2.webp" onclick="return fixmap(this);">地下２階</a> | <a href="map/map44_3.webp" onclick="return fixmap(this);">地下３階</a></div>
 <div class="st">少し進んだ先で、西の道から地下２階に上がり、宝箱とノルミン回収。</div>
 <div class="noru">アクア (地下２階：西の部屋)</div>
 <div class="st">地下３階に戻り、南の道へ。セーブポイントの先で地下４階へ。</div>
+<div class="map"><a href="map/map44_3.webp" onclick="return fixmap(this);">地下３階</a> | <a href="map/map44_4.webp" onclick="return fixmap(this);">地下４階</a></div>
 <div class="hyoma">マンイーター [Lv64] (地下４階)<br>
+【耐性：無・火・地・風】【種族：不定形】<br>
 <br>
-水属性以外に耐性あり。種族は不定形。<br>
-不定形の弱点を突くなら、火神依の「映ゆる煉獄」（◯、３連携目）か、風神依の「視えぬ幻影」（↑ or ↓＋◯、１連携目）。</div>
+水属性のみ耐性がないので、水神依でも良い。<br>
+<br>
+神依で不定形の弱点を突くなら、以下のいずれか。<br>
+火神依：「映ゆる煉獄」（◯、３連携目）。<br>
+風神依：「視えぬ幻影」（↑ or ↓＋◯、１連携目）。</div>
 </div>
 
 <div class="ct">
 <h3><a name="l6"></a>アロダイトの森</h3>
 <div class="ssub">イズチへ向かうため、アロダイトの森を通っていく。<br>
 <em>※途中にいる変異憑魔は、普通の敵と勘違いして接触しがちなので、セーブしておくこと。</em></div>
+<div class="map"><a href="map/map03_2.webp" onclick="return fixmap(this);">アロダイトの森（終盤）</a></div>
 <div class="st">入口から少し進むとイベント。</div>
 <div class="hyoma">デモンズロッド [Lv67] (入口から少し進んだ所にいる、杖を持った黒い敵)<br>
+【耐性：すべて】【種族：不死者】<br>
 <br>
-すべての属性に耐性あり。種族は不死者。<br>
-一度攻撃を受けるだけでも、かなり大ダメージになるので注意。<br>
-水神依で「断ちし散水」（← or →＋○、２連携目）で、不死者種族の弱点を突くといい。<br>
+一度攻撃を受けるだけでも、かなりの大ダメージになるので注意。<br>
+水神依の「断ちし散水」（← or →＋○、２連携目）で、不死者種族の弱点を突くといい。<br>
 前方の扇状に攻撃を行うモーションが来たら、バックステップで回避すること。</div>
 <div class="st">出口に近付くと、イベント。</div>
 
 <h3><a name="l7"></a>天族の杜イズチ</h3>
+<div class="map"><a href="map/map02.webp" onclick="return fixmap(this);">天族の社イズチ</a></div>
 <div class="st">イズチ前でケルベロスと戦闘。</div>
 <div class="btt">ケルベロス</div>
-<div class="ssub">無属性が弱点、火・水・風に耐性あり。種族は獣。<br>
+<div class="ssub">【弱点：無】【耐性：火・水・風】【種族：獣】<br>
 <br>
 風神依で、無属性の奥義から連携するといい。<br>
-「迅の裂刀」（○、１連携目）、「薙ぎて斬刀」（← or →＋○、１連携目）<br>
-側面から攻撃すると安全だが、敵はくるくる回って向きを変えるので注意。</div>
-<div class="schat">ジイジの家に入らず、アロダイトの森などに行こうとする：<a href="#" onclick="return word(this,'スレイ「みんな一体どこに！？」<br>ミクリオ「スレイ、まずはジイジの家に行こう。誰かいるとすればそこしかない」')">★</a></div>
+「迅の裂刀」（○、１連携目）、「薙ぎて斬刀」（← or →＋○、１連携目）。<br>
+側面から攻撃すると安全ですが、敵はくるくる回って向きを変えるので注意。</div>
+<div class="schat">戦闘後、ジイジの家に入らず、アロダイトの森などに行こうとする：<a href="#" onclick="return word(this,'スレイ「みんな一体どこに！？」<br>ミクリオ「スレイ、まずはジイジの家に行こう。誰かいるとすればそこしかない」')">★</a></div>
 <div class="st">イズチの門に近付く。</div>
 <div class="st">ジイジの家の前に近付く。</div>
 <div class="ssub"><b>サブイベント：</b> ジイジの家の本棚を調べる。<br>
@@ -219,10 +240,11 @@
 <div class="st">キャメロット大陸橋：中央キャンプ地にいる天族に話しかける。</div>
 <div class="st">プリズナーバック湿原で、レジェンドワイバーンと戦闘。<br>
 （湿原入口のセーブポイント付近から見える）</div>
+<div class="map"><a href="map/map41.webp" onclick="return fixmap(this);">プリズナーバック湿原</a></div>
 <div class="btt">レジェンドワイバーン</div>
-<div class="ssub">火・地・水に耐性あり。種族は竜/有翼/装甲。<br>
+<div class="ssub">【耐性：火・地・水】【種族：竜・有翼・装甲】<br>
 <br>
-風属性に耐性がないので、風神依で以下の奥義を使う。<br>
+風属性は耐性がないので、風神依で種族弱点を突く。<br>
 「竜の裂華」（○、２連携目） [風 : 竜]<br>
 「爆ぜぬ矛槍」（↑ or ↓＋○、２連携目） [火・風 : 装甲]</div>
 <div class="lchat">「<a href="../chat/lc_sub61.html#s61">さっきのザビーダは……</a>」 (倒すと自動再生)</div>
@@ -233,31 +255,35 @@
 <div class="st">各地の加護天族と話すと、ねこにんの里の情報が聞ける（任意）。</div>
 <div class="st">レディレイク：貴族街にいるネコに近付く。</div>
 <div class="st">「ジイジのキセル」を所持した状態で、ねこにんに話しかけると、ねこにんの里へ移動。</div>
-<div class="sem">ねこにんの里の広場の方に近付くと、イベントが始まり戦闘になるので、先に準備を整えておくこと。</div>
+<div class="map"><a href="map/map45.webp" onclick="return fixmap(this);">ねこにんの里</a></div>
+<div class="sem">北東の広場に近付くと、イベントが始まって戦闘になるので、セーブや準備を整えておくこと。</div>
 <div class="lchat">「<a href="../chat/lc_talk21.html#t29">しりとりんぐ</a>」 (ねこにんの里の宿屋に泊まる [確率])</div>
-<div class="dis">「トラ柄のねこじゃらし」
+<div class="dis">「トラ柄のねこじゃらし」 (上エリアの東の端)
 <div class="lchat">「<a href="../chat/lc_main141.html#m147">ネコじゃらし？</a>」</div>
 </div>
-<div class="st">北の広場に近付くと戦闘。</div>
+<div class="st">北東の広場に近付くと戦闘。</div>
 <div class="btt">ダークかめにん</div>
-<div class="ssub">属性の弱点・耐性なし。種族は甲殻。<br>
-Lv 99 の強敵。攻撃力が高く、ＨＰがなかなか減らない。<br>
+<div class="ssub">【弱点・耐性：なし】【種族：甲殻】<br>
+Lv 99 の強敵です。攻撃力が高く、ＨＰがなかなか減りません。<br>
 <br>
 長期戦＆総力戦になるので、回復アイテムはフルで用意しておくこと。<br>
 接近戦しかしてこない＆一撃のダメージが重いので、二人とも神依化して戦うのがベスト。<br>
-できれば甲殻種族の弱点を突いていきます。<br>
 <br>
-攻撃はロゼ達に任せて、スレイはミクリオと神依化して、遠距離から援護＆回復役に徹した方がいい。<br>
-（水神依の奥義で、甲殻に対応しているものはありませんが、天響術「トリニティアロー」なら対応している）<br>
+できれば甲殻種族の弱点を突いていきます。<br>
+火神依：「断つは渓谷」（↑ or ↓＋◯、２連携目）。<br>
+風神依：「千の毒晶」（◯、３連携目）。<br>
+<br>
+攻撃は仲間に任せて、水神依で遠距離から援護＆回復役に徹した方がいい。<br>
+（水神依の奥義で甲殻に対応しているものはありませんが、天響術「トリニティアロー」なら対応しています）<br>
 <br>
 数回攻撃を受けるだけでもダメージが大きいので、味方のＨＰが半分くらいになったら、早めに回復しておくこと。<br>
-もし敵が自分の方に向かってきたら、ステップで回避しながら逃げ、敵が標的を変えたら、元の援護体制に戻る。</div>
+もし敵が自分の方に向かってきたら、ステップで回避しながら逃げ、敵が標的を変えたら、元の援護体制に戻ります。</div>
 <div class="ssub"><b>＜ＭＥＭＯ＞</b><br>
 ねこにんの里の武具屋では強力な装備品が売られているので、頻繁に足を運びたいところですが、里内にはセーブポイントがないので、直接移動することができません。<br>
 最短で移動するなら、ラウドテブル王宮のセーブポイントから行くと近いです。</div>
 
 <h3>変異憑魔</h3>
-この時点で、すべての変異憑魔を倒しているかどうか確認しておく。<br>
+この時点で、すべての変異憑魔を倒しているかどうか確認しておきます。<br>
 異形の宝珠が35個あればOK。<br>
 水・地・風の試練神殿の最深部にいる変異憑魔は気付きにくいので、見逃していないか注意。
 </div>
@@ -270,16 +296,19 @@ Lv 99 の強敵。攻撃力が高く、ＨＰがなかなか減らない。<br>
 <div class="lchat">「<a href="../chat/lc_main141.html#m150">雷神の像</a>」</div>
 </div>
 <div class="hyoma">エンジェル [Lv69] (円形ホール)<br>
+【弱点：無】【耐性：火・地・水・風】【種族：妖魔・有翼】<br>
 <br>
-無属性が弱点、火・地・水・風に耐性あり。種族は妖魔/有翼。<br>
-<em>※無属性攻撃を反射するので、無属性では攻撃しないこと。</em><br>
+<em>※無属性が弱点ですが、高い確率で無属性攻撃を反射するので、無属性では攻撃しないこと。</em><br>
 <br>
-水神依で、↑ or ↓＋○の２連携・３連携目の奥義で、有翼・妖魔の種族弱点を突くといい。</div>
+水神依で、有翼・妖魔の種族弱点を突くと良いです。<br>
+「湧くは濁刃」（↑ or ↓＋○、２連携目）[有翼]<br>
+「巻くは渦潮」（↑ or ↓＋○、３連携目）[妖魔]</div>
 <div class="lchat">「<a href="../chat/lc_talk21.html#t31">偉業でしたね</a>」 (任意のセーブポイント：異形の宝珠を36個所持)</div>
 
 <h3>マビノギオ山岳遺跡深部</h3>
 <div class="ssub">イズチとマビノギオ山岳遺跡（深部は除く）は、レディレイク周辺の加護エリアに含まれますが、マビノギオ山岳遺跡深部以降は、加護がない状態になります。</div>
 <div class="st">雷神像の左右の道から階段を下りて、扉の先へ。</div>
+<div class="map"><a href="map/map46_1.webp" onclick="return fixmap(this);">マビノギオ山岳遺跡深部・東</a></div>
 <div class="st">少し進むと、イベント。</div>
 <div class="st">さらに進むと、砂漠に移動する。</div>
 <div class="ssub">どの方向に進むかわかりにくいですが、移動できない壁に沿って進むといい。</div>
@@ -289,7 +318,7 @@ Lv 99 の強敵。攻撃力が高く、ＨＰがなかなか減らない。<br>
 <div class="noru">シールド (最初の分かれ道を北に行った部屋)</div>
 <div class="st">再び砂漠に移動するので、同じように進む。</div>
 <div class="btt">幻影スレイ（水神依）＆幻影ロゼ（風神依）</div>
-<div class="ssub">敵の水神依の方が厄介なので、スレイを先に倒す。</div>
+<div class="ssub">水神依の方が厄介なので、スレイを先に倒す。</div>
 <div class="lchat">「<a href="../chat/lc_sub41.html#s55">ロゼの欲しいもの</a>」 (任意のセーブポイント：異形の宝珠を30個以上所持)</div>
 <div class="st">セーブポイントの先で、サイモンと戦闘。</div>
 <div class="btt">サイモン②</div>
@@ -297,8 +326,8 @@ Lv 99 の強敵。攻撃力が高く、ＨＰがなかなか減らない。<br>
 
 <div class="ct">
 <h3><a name="l10"></a>サブイベント</h3>
-<div class="ssub">この段階でサブイベントがいくつか発生しているので、進めておく。</div>
-<div class="lchat">「<a href="../chat/lc_sub01.html#s08">誤解は解かずに</a>」 (ペンドラゴ宿屋のセーブポイント：騎士団塔前でセルゲイと話している)</div>
+<div class="ssub">この段階でいくつかサブイベントが発生しているので、進めておきます。</div>
+<div class="lchat">「<a href="../chat/lc_sub01.html#s08">誤解は解かずに</a>」 (ペンドラゴ宿屋のセーブポイント：騎士団塔前でセルゲイと話していること)</div>
 
 <h3>アリーシャ</h3>
 <div class="st">レディレイク：アリーシャの屋敷内で、アリーシャに近付く。</div>

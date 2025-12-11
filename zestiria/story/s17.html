@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../def.css" type="text/css">
 <title>ゼスティリア:ストーリー攻略(17)</title>
 <script type="text/javascript" src="../menu.js"></script>
+<script type="text/javascript" src="../map.js"></script>
 </head>
 <body>
 <script>menu_init();</script>
@@ -19,7 +20,7 @@
 
 <div class="ct">
 <h3>DLC アリーシャアフターエピソード</h3>
-「New Game」で始めた場合、本編のプレイ状態に関係なく、このエピソードを単体でプレイできますが、クリア後の状態を本編データに引き継ぐことはできません。<br>
+「New Game」で始めた場合、本編のプレイ状況に関係なく、単体でこのエピソードをプレイできますが、その場合、クリア後の状態を本編データに引き継ぐことはできません。<br>
 <br>
 「Ex New Game」の場合は、本編クリア済みの★が付いているセーブファイルを読み込むことで、本編のプレイ状態を引き継いでプレイすることができます。<br>
 また、このエピソードクリア後に、アイテムやステータスの状態を本編に引き継げます。<br>
@@ -28,24 +29,26 @@
 
 <div class="ct">
 <h3><a name="l1"></a>大樹の街マーリンド</h3>
-<div class="st">広場から街に出る手前で、ショートチャット。</div>
+<div class="map"><a href="map/map58.webp" onclick="return fixmap(this);">マーリンド</a></div>
+<div class="ssub">※宝箱や薬草の配置場所は、本編時と異なります。</div>
+<div class="st">広場から街中に出る手前で、ショートチャット。</div>
 <div class="ssub">そのまま進んで街の方に出るとイベントが始まるので、ショートチャットが終わるまで移動しないこと。</div>
-<div class="st">広場から街の方に出ると、イベント。</div>
+<div class="st">広場から街中の方に出ると、イベント。</div>
 <div class="btt">過激派 (D)</div>
 <div class="st">夜、宿屋のロゼに会いに行く。</div>
 <div class="schat">宿屋に行かず、マーリンドの出口に近付く：<a href="#" onclick="return word(this,'アリーシャ「スレイ……」<br>アリーシャ「ロゼに会って、話を聞かないと」')">★</a></div>
 <div class="st">宿屋前にいるロゼに近付くと、ロングチャット。</div>
 <div class="st">宿屋に入ると、イベント。</div>
-<div class="ssub">料理が出来たと言われた後、カウンターの女性と話すと、「パルミエ」をもらえる。</div>
+<div class="ssub">料理が出来たと言われた後、カウンターの女性と話すと「パルミエ」をもらえる。</div>
 <div class="schat">客室に入らず、宿屋の出口に近付く：<a href="#" onclick="return word(this,'アリーシャ「ロゼに話を聞かなくちゃ」')">★</a></div>
 <div class="st">宿屋の奥の客室に入る。</div>
-<div class="ssub">イベント後、宿屋に入り直して、客室に入ると、皿の上に「オータムブレイド」（サンマ形の短剣）がある。</div>
+<div class="ssub">イベント後、宿屋に入り直して、客室に入ると、皿の上にある「オータムブレイド」（サンマ形の短剣）を入手できます。</div>
 <div class="st">マーリンドの出口を調べると、ラストンベルに移動してイベント。</div>
 </div>
 
 <div class="ct">
 <h3><a name="l2"></a>職人の街ラストンベル</h3>
-<div class="ssub">ライラとエドナの話の裏で、アリーシャとロゼが喋っている内容は、以下の通り。<br>
+<div class="ssub">ライラとエドナの話の裏で、アリーシャとロゼが喋っている内容は以下の通り。<br>
 <a href="#" onclick="return showhide(this,'memo1')">▼開く</a><br>
 <div id="memo1" style="display:none">アリーシャ「取り消して！　仲間じゃなくないって！」<br>
 ロゼ「あんたは他人」<br>
@@ -65,6 +68,7 @@
 ロゼ「もう！　こいつ！」</div>
 </div>
 <div class="st">イベントが終わると、ロングチャット。</div>
+<div class="map"><a href="map/map59.webp" onclick="return fixmap(this);">ラストンベル</a></div>
 <div class="schat">聖堂の方に行かず、東の出口に近付く：<a href="#" onclick="return word(this,'アリーシャ「寄宿舎に帰って休もう」')">★</a></div>
 <div class="st">聖堂を少し過ぎた所に近付くと、イベント。</div>
 <div class="btt">過激派 (B,D,E)</div>
@@ -72,34 +76,43 @@
 <div class="lchat">「実はいいコンビ？」 (聖堂前のセーブポイント)</div>
 <div class="st">宿屋前付近に近付く。</div>
 <div class="lchat">「ジョシカイ」 (東門前のセーブポイント)<br>
-「（タイトル不明）」 (ラストンベル宿屋に泊まる)</div>
-<div class="st">ヴァーグラン森林を東に向かって、グレイブガント盆地へ。</div>
+「本当の顔」 (ラストンベル宿屋に泊まる)</div>
 <div class="ssub">デフォルトでは、操作キャラがアリーシャになっていますが、アリーシャは神依化できないので、ロゼを操作キャラにしておいた方が戦いやすくなります。<br>
 フィールドメニューのキャラステータス上で、△（戦闘操作キャラ切替）ボタンを押して、アリーシャとロゼを選択すると、ロゼを１Ｐに出来ます。<br>
 <br>
 なお、セーブポイント間移動は普通に出来るので、戦闘が続いた後は、街に戻って宿屋に泊まっておくと良いです。<br>
 また、このエピソードでは、本編で買えないような武具が購入できるので、武具屋も頻繁に見ておくといいでしょう。</div>
 
+<h3><a name="l3"></a>ヴァーグラン森林</h3>
+<div class="st">ヴァーグラン森林を東に向かって、グレイブガント盆地へ。</div>
+<div class="map"><a href="map/map60.webp" onclick="return fixmap(this);">ヴァーグラン森林</a></div>
+
 <h3><a name="l3"></a>グレイブガント盆地</h3>
+<div class="map"><a href="map/map61.webp" onclick="return fixmap(this);">グレイブガント盆地</a></div>
 <div class="st">ローランス陣地を北に進むと、戦闘。</div>
 <div class="btt">過激派 (F)</div>
 <div class="st">逃げる過激派を追っていく。</div>
 <div class="schat">過激派がいる方ではなく、南の方に進もうとする：<a href="#" onclick="return word(this,'アリーシャ「過激派を追いかけないと！」')">★</a></div>
 <div class="st">過激派が洞窟に入るのを見ると、ロングチャット。</div>
-<div class="ssub">グレイブガント盆地を東に行くと、フォルクエン丘陵へ行ける。<br>
-宝箱や薬草が回収できるほか、マーリンドにも入れる。</div>
-<div class="schat">ボールス遺跡や遺構窟メルシオに入ろうとする：<a href="#" onclick="return word(this,'アリーシャ「ここには用が無いな」')">★</a></div>
-<div class="st">グレイブガント盆地の洞窟内に入る。</div>
+<div class="schat">遺構窟メルシオに入ろうとする：<a href="#" onclick="return word(this,'アリーシャ「ここには用が無いな」')">★</a></div>
+
+<h3><a name="l3"></a>フォルクエン丘陵</h3>
+<div class="ssub">グレイブガント盆地を東に行くと、フォルクエン丘陵へ行けます。<br>
+宝箱や薬草が回収できるほか、マーリンドにも入れます。</div>
+<div class="map"><a href="map/map62.webp" onclick="return fixmap(this);">フォルクエン丘陵</a></div>
+<div class="schat">ボールス遺跡に入ろうとする：<a href="#" onclick="return word(this,'アリーシャ「ここには用が無いな」')">★</a></div>
 </div>
 
 <div class="ct">
 <h3><a name="l4"></a>カーネック封洞</h3>
+<div class="st">グレイブガント盆地の北の洞窟内に入る。</div>
+<div class="map"><a href="map/map63_1.webp" onclick="return fixmap(this);">カーネック封洞・南部</a> | <a href="map/map63_2.webp" onclick="return fixmap(this);">中央部</a> | <a href="map/map63_3.webp" onclick="return fixmap(this);">北部</a></div>
 <div class="st">南部を少し進むと、ロングチャット。</div>
 <div class="st">中央部の丸いエリアで、ロングチャット。</div>
 <div class="st">北部の中央付近に近付くと、イベント。</div>
 <div class="btt">マルトラン（幻影）</div>
-<div class="ssub">無・風属性が弱点、火と水に耐性あり。種族は不明。</div>
-<div class="ssub">サイモン達の話の裏で、アリーシャとロゼが喋っている内容は、以下の通り。<br>
+<div class="ssub">【弱点：無・風】【耐性：火・水】【種族：不明】</div>
+<div class="ssub">サイモン達の話の裏で、アリーシャとロゼが喋っている内容は以下の通り。<br>
 <a href="#" onclick="return showhide(this,'memo2')">▼開く</a><br>
 <div id="memo2" style="display:none">ロゼ「略してさぱらん、だね」<br>
 アリーシャ「何それ？　変なの」<br>
@@ -113,111 +126,141 @@
 <div class="st">出口手前で、ロングチャット×2。</div>
 
 <h3><a name="l5"></a>ストラット山岳</h3>
+<div class="map"><a href="map/map64_1.webp" onclick="return fixmap(this);">ストラット山岳</a></div>
 <div class="lchat">「悩みの先に」 (カーネック封洞入口のセーブポイント)</div>
-<div class="st">先に進み、洞窟の入口前で、ロングチャット。</div>
+<div class="st">崖を進んで、洞窟の入口前で、ロングチャット。</div>
+<div class="map"><a href="map/map64_2.webp" onclick="return fixmap(this);">ストラット山岳の洞窟</a></div>
 <div class="st">洞窟内を進む。出口前でロングチャット。</div>
 <div class="st">洞窟から出て、ストラット山岳を進む。</div>
-<div class="st">手前ではなく、奥の崖を登ると、穢れの坩堝。</div>
+<div class="map"><a href="map/map64_1.webp" onclick="return fixmap(this);">ストラット山岳</a></div>
+<div class="st">崖を降りた所の奥の崖を登ると、穢れの坩堝。</div>
 <div class="ssub"><b>穢れの坩堝・奈落</b> [アリーシャ＆ロゼ]<br>
 全体的に、敵はそれほど強くない。<br>
-最後のキルバーンは、竜/有翼/装甲のいずれかの種族弱点を突く。</div>
+最後のキルバーンは、竜・有翼・装甲のいずれかの種族弱点を突く。</div>
 <div class="st">長い崖を登る。</div>
-<div class="ssub">崖を登って、エレイン遺跡が見えてくると、ショートチャットが始まる。<br>
-さらに遺跡に近付くとロングチャットが始まるので、ショートチャットが終わるまで移動しないこと。</div>
+<div class="ssub">崖を登って、エレイン遺跡が見えてくると、ショートチャットが始まります。<br>
+さらに遺跡に近付くと、ロングチャットが始まってしまうので、ショートチャットが終わるまで移動しないこと。</div>
 <div class="lchat">「ロゼのイラダチ」 (エレイン遺跡入口のセーブポイント)</div>
 <div class="st">エレイン遺跡に入る。</div>
 </div>
 
 <div class="ct">
 <h3><a name="l6"></a>エレイン遺跡</h3>
+<h5>１階</h5>
+<div class="map"><a href="map/map65_01.webp" onclick="return fixmap(this);">エレイン遺跡・１階</a></div>
 <h5>２階</h5>
-<div class="st">入ってすぐ左の部屋で宝箱を回収した後、東へ行く。</div>
-<div class="st">東の各部屋で宝箱を回収した後、北の方へ行く。</div>
+<div class="map"><a href="map/map65_02.webp" onclick="return fixmap(this);">２階</a></div>
+<div class="st">上がってきてすぐ左の部屋で宝箱を回収した後、東へ行く。</div>
+<div class="st">東の各部屋で宝箱を回収した後、北の方へ行って３階へ。</div>
 <h5>３階</h5>
-<div class="st">南西の部屋で宝箱を回収した後、北の方へ行く。</div>
-<div class="st">北東の部屋で宝箱を回収したら、北・中央へ。</div>
+<div class="map"><a href="map/map65_03.webp" onclick="return fixmap(this);">３階</a></div>
+<div class="st">南西の部屋で宝箱を回収した後、北の中央方向へ。</div>
+<div class="st">北東の部屋で宝箱を回収したら、北へ向かって４階へ。</div>
 <h5>４階</h5>
-<div class="st">東へ進み、道なりに行くと、中央でボスと戦闘。</div>
+<div class="map"><a href="map/map65_04.webp" onclick="return fixmap(this);">４階</a></div>
+<div class="st">東に進んで道なりに行くと、中央でボスと戦闘。</div>
 <div class="btt">カドゥルー＆ヴリトラ</div>
-<div class="ssub">２体とも種族が無足なので、同時に攻撃するなら、無足の術技で弱点を突くといい。<br>
-火神依なら「燃ゆる孤月」（◯、１連携目）。</div>
+<div class="ssub">カドゥルー【弱点：地・水】【耐性：なし】【種族：無足・妖魔】<br>
+ヴリトラ【弱点：無・風】【耐性：地】【種族：無足・竜】<br>
+<br>
+２体とも種族が無足なので、同時に攻撃するなら、無足の術技で弱点を突くといい。<br>
+２体とも火に耐性はないので、火神依なら、「燃ゆる孤月」（◯、１連携目）。</div>
 <div class="st">戦闘後、ザビーダが加入。</div>
-<div class="ssub">５階への階段手前に、ダークかめ屋がいる。<br>
+<div class="ssub">５階への階段手前に、ダークかめ屋がいます。<br>
 その付近の宝箱で「紫水晶の鍵」を入手しておく。</div>
-<div class="st">紫水晶の鍵入手後、４階の北東の部屋で宝箱回収。</div>
-<h5>５階</h5>
+<div class="st">紫水晶の鍵入手後、道を戻って、北東の部屋で扉を開けて、宝箱回収。</div>
+<h5>５階・東</h5>
+<div class="map"><a href="map/map65_05.webp" onclick="return fixmap(this);">５階</a></div>
 <div class="ssub">ここから敵が手強くなります。<br>
 敵シンボルが密集している上、出現する敵数も多いので、こまめにクイックセーブをしておくこと。</div>
 <div class="st">扉を開けた後、まっすぐ行って、宝箱を回収。</div>
 <div class="st">西方向へ。</div>
-<div class="st">北と南に分かれている道では、まず北に行って、宝箱回収。</div>
-<div class="st">戻って南に行き、６階へ。</div>
-<h5>６階</h5>
-<div class="ssub">分岐が多いですが、南の方から順番に行けばＯＫ。</div>
-<div class="st">まずは入口から北→西の道を行き、７階で宝箱回収。<br>
+<div class="st">北と南に分かれている道では、まず北に行って、６階：北の部屋で宝箱回収。</div>
+<div class="map"><a href="map/map65_05a.webp" onclick="return fixmap(this);">６階・北の部屋</a></div>
+<div class="st">５階に戻って南に行き、６階へ。</div>
+<h5>６階・東</h5>
+<div class="map"><a href="map/map65_06a.webp" onclick="return fixmap(this);">６階・東</a></div>
+<div class="ssub">分岐が多いですが、南の方から順に北に行けばＯＫ。</div>
+<div class="st">まずは入口から北→西の道を行き、７階（南東の部屋）で宝箱回収。<br>
 そこから南に行っても何もないので、戻る。</div>
-<div class="st">６階に戻ったら、北→東の道を行き、７階で宝箱回収。</div>
+<div class="map"><a href="map/map65_07.webp" onclick="return fixmap(this);">７階</a></div>
+<div class="st">６階に戻ったら、北→東の道を行き、７階：東の宝物庫で宝箱回収。</div>
+<div class="map"><a href="map/map65_07a.webp" onclick="return fixmap(this);">７階・東の宝物庫</a></div>
 <div class="ssub">ここで「紫水晶の証玉」を入手。<br>
 紫の装飾が付いている壁を開くことができます。</div>
+<div class="map"><a href="map/map65_06a.webp" onclick="return fixmap(this);">６階・東</a> | <a href="map/map65_07.webp" onclick="return fixmap(this);">７階</a></div>
 <div class="st">６階に戻り、北→東の道を行き、７階で宝箱回収。</div>
-<div class="st">６階に戻り、北へ行くと、７階へ。</div>
-<h5>７階</h5>
+<div class="st">６階に戻って北へ行き、７階へ。</div>
+<h5>７階（北東）</h5>
+<div class="map"><a href="map/map65_07.webp" onclick="return fixmap(this);">７階</a></div>
 <div class="st">紫色の装飾が付いた壁を調べて、開ける。</div>
-<div class="st">まず東の扉を開けて進み、８階で宝箱回収。</div>
-<div class="st">７階に戻って、西の扉を開けて進み、６階に下りる。</div>
-<h5>６階</h5>
+<div class="st">まず東の扉を開けて進み、８階：東の部屋で宝箱回収。</div>
+<div class="map"><a href="map/map65_08a.webp" onclick="return fixmap(this);">８階・東の部屋</a></div>
+<div class="st">７階に戻って、西の扉を開けて進み、６階・西に下りる。</div>
+<h5>６階・西</h5>
+<div class="map"><a href="map/map65_06b.webp" onclick="return fixmap(this);">６階・西</a> | <a href="map/map65_05.webp" onclick="return fixmap(this);">５階</a></div>
 <div class="st">南の方に進む。</div>
 <div class="st">まずは西の壁を開けて進み、５階で宝箱回収。</div>
 <div class="st">戻って東の扉を開け、５階へ下りる。</div>
-<h5>５階</h5>
+<h5>５階・西</h5>
+<div class="map"><a href="map/map65_05.webp" onclick="return fixmap(this);">５階</a></div>
 <div class="st">北の方で宝箱を回収する。</div>
 <div class="st">西の壁を開けて、南の方へ進む。</div>
-<div class="ssub">途中にある東の壁を開けると、４階の方に戻れる。</div>
-<div class="st">南西位置では、まずは北の道を行き、４階で宝箱回収。<br>
+<div class="ssub">中央位置の壁を開けると、４階の方に戻れます。</div>
+<div class="st">南西位置では、まず北の道を行き、４階：西の部屋で宝箱回収。<br>
 （柱の後ろにも宝箱があるので注意）</div>
-<div class="st">戻って、南の道を行くと、６階へ上がる。</div>
-<h5>６階</h5>
-<div class="st">まずは西へ行き、７階で宝箱回収。</div>
-<div class="st">戻って、北→西の道を行き、７階で宝箱回収。</div>
-<div class="st">戻って東へ行くと、７階へ。</div>
+<div class="map"><a href="map/map65_04a.webp" onclick="return fixmap(this);">４階・西の部屋</a> | <a href="map/map65_05.webp" onclick="return fixmap(this);">５階</a></div>
+<div class="st">戻って、南の道を行き、６階へ上がる。</div>
+<h5>６階・西</h5>
+<div class="map"><a href="map/map65_06b.webp" onclick="return fixmap(this);">６階・西</a> | <a href="map/map65_07.webp" onclick="return fixmap(this);">７階</a> | <a href="map/map65_07b.webp" onclick="return fixmap(this);">７階・西の宝物庫</a></div>
+<div class="st">まずは南西へ行き、７階（南西の部屋）で宝箱回収。</div>
+<div class="st">戻って北西に行き、７階：西の宝物庫で宝箱回収。</div>
+<div class="st">戻って北東に行き、７階へ。</div>
 <h5>７階</h5>
+<div class="map"><a href="map/map65_07.webp" onclick="return fixmap(this);">７階</a></div>
 <div class="st">まっすぐ進んで、８階へ。</div>
 <h5>８階</h5>
+<div class="map"><a href="map/map65_08.webp" onclick="return fixmap(this);">８階</a></div>
 <div class="st">扉を開けた先で戦闘。</div>
 <div class="btt">ヴァルキリー＆ルフ</div>
-<div class="ssub">２体とも飛んでおり、特技や奥義だと攻撃が当てにくいので、ロゼを操作して神依化し、天響術を使うといい。<br>
-２体とも有翼種族。</div>
+<div class="ssub">ヴァルキリー【弱点：火】【耐性：風】【種族：妖魔・有翼】<br>
+ルフ【弱点：水】【耐性：火・地】【種族：有翼】<br>
+<br>
+２体とも飛んでおり、特技や奥義だと攻撃が当てにくいので、ロゼを操作して神依化し、天響術を使うといい。</div>
 <div class="st">西の壁を開けて進むと、ダークかめ屋がいる。</div>
 <div class="st">９階への階段の道で、ロングチャット。</div>
 <h5>９階</h5>
+<div class="map"><a href="map/map65_09.webp" onclick="return fixmap(this);">９階</a></div>
 <div class="st">まずは西に行って、宝箱回収。</div>
-<div class="st">戻って北へ行った後、宝箱の後ろの壁を開けて、北東方向に進む。<br>
-（南には何もない）</div>
-<div class="st">長い部屋で宝箱回収後、北へ行き、10階へ。</div>
+<div class="st">戻って北へ行った後、宝箱の後ろの壁を開けて、北東方向に進む。</div>
+<div class="st">横長の部屋で宝箱回収後、北へ行き、10階へ。</div>
 <h5>10階</h5>
+<div class="map"><a href="map/map65_10.webp" onclick="return fixmap(this);">10階</a></div>
 <div class="st">まずは東へ行き、宝箱回収。</div>
 <div class="st">戻って西へ行き、北西のエリアで宝箱回収。</div>
 <div class="st">戻って東へ進み、中央エリアへ。南の方で宝箱回収。</div>
-<div class="st">北へ行くと11階へ。</div>
+<div class="st">北へ行き、11階へ。</div>
 <h5>11階</h5>
+<div class="map"><a href="map/map65_11.webp" onclick="return fixmap(this);">11階</a></div>
 <div class="st">宝箱を回収しつつ、道なりに進む。</div>
 <h5>12階</h5>
 <div class="btt">バフォメット</div>
-<div class="ssub">無と風属性が弱点、火と地に耐性あり。種族は獣人/妖魔。<br>
-風神依なら、「果てぬ影星」（↑ or ↓＋◯、３連携目）で、無属性と妖魔の弱点が突ける。<br>
-ＨＰを減らすと、イベントに移行する。</div>
+<div class="ssub">【弱点：無・風】【耐性：火・地】【種族：獣人・妖魔】<br>
+<br>
+風神依なら、「果てぬ影星」（↑ or ↓＋◯、３連携目）で、無属性と妖魔の弱点が突けます。<br>
+ＨＰを減らすと、イベントに移行します。</div>
 <div class="btt">バフォメット×２</div>
-<div class="ssub">２体同時に倒す必要があるので、２体のＨＰを確認して、ＨＰが同じくらいになるように攻撃する。<br>
+<div class="ssub">２体同時に倒す必要があるので、２体のＨＰが同じくらいになるように攻撃していきます。<br>
 アリーシャのＨＰが減りやすいので、回復のタイミングに注意すること。<br>
 <br>
 なお、どちらか１体を倒しきるくらい攻撃しても、しばらくはＨＰ１のまま留まるので、厳密に同時撃破でなくても大丈夫です。<br>
-ただし、ＨＰ１の状態でしばらく経った場合は、２体のＨＰが少し回復するので注意。<br>
-２体のＨＰを同じくらい少なくできたら、範囲攻撃できる天響術や秘奥義などで、同時にとどめを刺すといい。</div>
+ただし、ＨＰ１の状態でしばらく経つと、２体のＨＰが少し回復します。<br>
+２体のＨＰを同じくらい少なくできたら、範囲攻撃できる天響術や秘奥義などで、同時にとどめを刺すと良いでしょう。</div>
 <div class="st">エンディング</div>
-<div class="ssub">プレイ開始時にセーブファイルを読み込んだ場合は、クリア後、本編に引き継ぐために、新しいセーブファイルが作成されます。<br>
-セーブ場所（セーブタイトルで表示される位置）は、プレイ開始時に読み込んだファイルと同じになります。<br>
+<div class="ssub">DLC のプレイ開始時に、本編のセーブファイルを読み込んだ場合は、クリア後、状態を本編に引き継ぐために、新しいセーブファイルが作成されます。<br>
+セーブ場所（セーブタイトルで表示される位置）は、読み込んだ本編セーブファイルと同じになります。<br>
 <br>
-なお、このエピソードで戦闘に参加していないスレイとミクリオにも、これまでの経験値が入っているので、新しいセーブファイルでは、レベルが上がっているかもしれません。</div>
+なお、このエピソードで戦闘に参加していないスレイとミクリオにも、これまでにプレイした経験値が入っているので、新しいセーブファイルでは、レベルが上がっているかもしれません。</div>
 </div>
 
 <div class="navi"><a href="s16.html">&lt; Prev</a> | <a href="index.html">Back</a> | <a href="s18.html">Next &gt;</a></div>
